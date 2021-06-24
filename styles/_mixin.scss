@@ -1,0 +1,6 @@
+@mixin mobile-imgsize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  margin: $margin-sml 0px $margin-sml 0;
+}

@@ -11,9 +11,10 @@
   <body>
     <div class="section1">
       <header class="header">
-        <img class="logo" src="./assets/Logo/Logo-bandsite.svg">
+        <img class="header__logo" src="./assets/Logo/Logo-bandsite.svg">
         <div class="header__items">
-          <p class="header__item">Biography</p>
+          <img class="header__logo__header--item" src="./assets/Logo/Logo-bandsite.svg">
+          <p class="header__item--border">Biography</p>
           <p class="header__item">Shows</p>
         </div>
       </header>
@@ -27,7 +28,7 @@
     <!-- End of Section 1 -->
     <div class="allabout">
       <about>
-        <h2>About the Musicians</h2>
+        <h2 class="allabout__title">About the Musicians</h2>
         <div class="imageandabout">
           <div class="imageandabout__image"></div>
           <p class="imageandabout__summary">
@@ -36,77 +37,84 @@
           </p>
           <p class="imageandabout__quote">- Bryan Teddy, lead vocalist of the Bees Knees</p>
           <h3 class="imageandabout__title">The Bees Knees</h3>
-          <p class="imageandabout__writeup">
-          The Bees Knees is a pop rock band originating from San Francisco,
-          California. The band consists of lead vocalist Bryan Teddy, guitarist
-          Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer
-          Freddie Fischer. The band achieved its first commercial success as an
-          unsigned act, drawing attention from manager Cam Adams. Having worked
-          with other popular acts (The Elephant In The Room, One Trick Pony, The
-          Cat’s Meow), Adams was confident the band could succeed even further,
-          pushing them to sign with Magenta Records.
-          </p>
-          <p class="imageandabout__writeup">
-          From there, the band has soared, gaining international recognition and
-          ranking in the top 10 on the Poster Charts. New fans immediately fell
-          in love with the band’s original and organic attitude, solidifying
-          their place as one of the hottest and fastest up and coming acts of
-          this century. Fans affectionately refer to themselves as “The Hive”
-          and are drawn to their candid and authentic performances on stage.
-          Looking forward to touring in the future, The Bees Knees are currently
-          recording their second studio album, looking to be released in late
-          2021.
-          </p>
+          <div class="imageandabout__paragraphs">
+            <p class="imageandabout__writeup">
+            The Bees Knees is a pop rock band originating from San Francisco,
+            California. The band consists of lead vocalist Bryan Teddy, guitarist
+            Mack Tolkens, guitarist Andrew Green, bassist Kent Zulkee and drummer
+            Freddie Fischer. The band achieved its first commercial success as an
+            unsigned act, drawing attention from manager Cam Adams. Having worked
+            with other popular acts (The Elephant In The Room, One Trick Pony, The
+            Cat’s Meow), Adams was confident the band could succeed even further,
+            pushing them to sign with Magenta Records.
+            </p>
+            <p class="imageandabout__writeup">
+            From there, the band has soared, gaining international recognition and
+            ranking in the top 10 on the Poster Charts. New fans immediately fell
+            in love with the band’s original and organic attitude, solidifying
+            their place as one of the hottest and fastest up and coming acts of
+            this century. Fans affectionately refer to themselves as “The Hive”
+            and are drawn to their candid and authentic performances on stage.
+            Looking forward to touring in the future, The Bees Knees are currently
+            recording their second studio album, looking to be released in late
+            2021.
+            </p>
+        </div>
         </div>
 
       <photogall>
           <div class="photogall">
-            <h2>Photo Gallery</h2>
-            <div class="photogall__image1"></div>
-            <div class="photogall__image2"></div>
-            <div class="photogall__image3"></div>
-            <div class="photogall__image4"></div>
-            <div class="photogall__image5"></div>
-            <div class="photogall__image6"></div>
-            <div class="photogall__image7"></div>
-            <div class="photogall__image8"></div>
-            <div class="photogall__image9"></div>
+            <h2 class="photogall__title">Photo Gallery</h2>
+            <div class="photogall__images">
+              <div class="photogall__image1"></div>
+              <div class="photogall__image2"></div>
+              <div class="photogall__image3"></div>
+              <div class="photogall__image4"></div>
+              <div class="photogall__image5"></div>
+              <div class="photogall__image6"></div>
+              <div class="photogall__image7"></div>
+              <div class="photogall__image8"></div>
+              <div class="photogall__image9"></div>
+            </div>
           </div>
       </div>
       </photogall>
       <footer class="footer">
-        <h2 class=footer__title>Get in Touch</h2>
-        <div class="social">
-          <img class="social__image" src="./assets/Icons/SVG/Icon-instagram.svg" alt="Instagram-Logo">
-          <img class="social__image" src="./assets/Icons/SVG/Icon-facebook.svg" alt="Facebook">
-          <img class="social__image" src="./assets/Icons/SVG/Icon-twitter.svg" alt="Twitter">
-        </div>
+        <div class="footer__head">
+          <h2 class=footer__title>Get in Touch</h2>
+          <div class="social">
+            <img class="social__image" src="./assets/Icons/SVG/Icon-instagram.svg" alt="Instagram-Logo">
+            <img class="social__image" src="./assets/Icons/SVG/Icon-facebook.svg" alt="Facebook">
+            <img class="social__image" src="./assets/Icons/SVG/Icon-twitter.svg" alt="Twitter">
+          </div>
+          <img class="footer__logo1" src="./assets/Logo/Logo-bandsite.svg">
+      </div>
         <div class="contact">
           <div class="contact__info">
             <p class="contact__info--name-job">
             Cam Adams<br>
             The Beess Knees Management
           </p>
-            <p>503 Broadway Penthouse<br>
+            <p class="contact__details">503 Broadway Penthouse<br>
             New York, NY 10012, USA</p>
-            <p>info@thebeeskees.com</p>
+            <p class="contact__details">info@thebeeskees.com</p>
           </div>
           <div class="contact__info">
-            <p>Pearl Grgg</p>
-            <p>Limitless Artist Group</p>
-            <p>Booking Agent for</p>
-            <p>USA/South America/Japan</p>
-            <p>pearl.gregg@limitlessag.com</p>
+            <p class="contact__info--name-job">Pearl Grgg<br>
+            Limitless Artist Group</p>
+            <p class="contact__details">Booking Agent for<br>
+            USA/South America/Japan</p>
+            <p class="contact__details">pearl.gregg@limitlessag.com</p>
           </div>
           <div class="contact__info">
-            <p>Carson Whyte</p>
-            <p>ARCH Entertainment</p>
-            <p>Booking Agent for</p>
-            <p>UK / EU / AU</p>
-            <p>cwhte@archentertainment.com</p>
+            <p class="contact__info--name-job">Carson Whyte<br>
+            ARCH Entertainment</p>
+            <p class="contact__details">Booking Agent for<br>
+            UK / EU / AU</p>
+            <p class="contact__details">cwhte@archentertainment.com</p>
           </div>
         </div>
-        <img class="logo" src="./assets/Logo/Logo-bandsite.svg">
+        <img class="footer__logo" src="./assets/Logo/Logo-bandsite.svg">
         <p class="footer__copyright">Copyright The Bees Knees @ 2021 All Rights Reserved</p>
       </footer>
     </div>
