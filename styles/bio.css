@@ -6,41 +6,40 @@
   .header {
     background-color: #000000;
     width: 100%;
-    height: auto;
+    height: 82px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+  }
+  .header__logo2 {
+    display: visable;
   }
   .header__items {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    flex-wrap: wrap;
   }
   .header__item {
     color: #ffffff;
     padding: 1rem;
     font-size: 1.5rem;
+    width: 110px;
+    font-size: 1.5rem;
+  }
+  .header__links {
+    display: flex;
+    justify-content: space-evenly;
+    width: 320px;
   }
   .header__item--border {
-    border-bottom: 3px solid white;
     color: #ffffff;
     padding: 1rem;
     font-size: 1.5rem;
-  }
-  .header__logo {
-    display: visable;
-  }
-  .header__logo__header--item {
-    display: none;
-  }
-  .header--title {
-    color: #ffffff;
-    font-size: 3.75rem;
-    padding-left: 25%;
-    padding-right: 25%;
-  }
-  .header__logo {
-    margin: 16px;
+    width: 110px;
+    border-bottom: 3px solid white;
+    font-size: 1.5rem;
   }
 
   .hero {
@@ -115,6 +114,9 @@
 
   .photogall {
     background-color: #fafafa;
+  }
+  .photogall__title {
+    margin-left: 25px;
   }
   .photogall__images {
     display: flex;
@@ -204,7 +206,7 @@
     padding-top: 16px;
   }
   .footer__logo1 {
-    visibility: visable;
+    display: none;
   }
   .footer__title {
     margin: 16px 0 16px 0;
@@ -246,18 +248,16 @@
     display: flex;
   }
   .header__items {
-    justify-content: flex-start;
+    display: flex;
   }
-  .header__logo {
-    display: none;
+  .header__logo2 {
+    border-style: solid;
+    border-color: white;
   }
   .header__item {
     color: #ffffff;
     padding: 1rem;
     font-size: 1.5rem;
-  }
-  .header__logo__header--item {
-    margin: 10px 50px 0 50px;
   }
   .header--title {
     color: #ffffff;
@@ -437,10 +437,10 @@
     font-size: 2.25rem;
   }
   .footer__logo {
-    display: none;
+    display: visable;
   }
   .footer__logo1 {
-    visibility: none;
+    display: none;
   }
 
   .social {

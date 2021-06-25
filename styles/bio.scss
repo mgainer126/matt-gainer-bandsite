@@ -84,43 +84,45 @@ $tablet-image-width: 30vh;
   .header {
     background-color: $bandsite-dark_black;
     width: 100%;
-    height: auto;
+    height: 82px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
+    padding-top: 20px;
+    &__logo2 {
+      display: visable;
+    }
     &__items {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
+      flex-wrap: wrap;
     }
     &__item {
       color: $bandsite-white;
       padding: 1rem;
       font-size: $fontsize-sml;
-      // padding-left: 20%;
-      &--border {
-        border-bottom: 3px solid white;
-        color: $bandsite-white;
-        padding: 1rem;
-        font-size: $fontsize-sml;
-      }
+      width: 110px;
+      // border: 3px solid white;
+      font-size: $fontsize-sml;
     }
-    &__logo {
-      display: visable;
+    &__links {
+      display: flex;
+      justify-content: space-evenly;
+      // border-style: solid;
+      // border-color: red;
+      width: 320px;
     }
-    &__logo__header--item {
-      display: none;
-    }
-    &--title {
+    &__item--border {
       color: $bandsite-white;
-      font-size: $fontsize-lg;
-      padding-left: 25%;
-      padding-right: 25%;
-    }
-    &__logo {
-      margin: $margin-sml;
+      padding: 1rem;
+      font-size: $fontsize-sml;
+      width: 110px;
+      border-bottom: 3px solid white;
+      font-size: $fontsize-sml;
     }
   }
+  // padding-left: 20%;
 
   .hero {
     width: 100vw;
@@ -196,6 +198,9 @@ $tablet-image-width: 30vh;
 
   .photogall {
     background-color: #fafafa;
+    &__title {
+      margin-left: 25px;
+    }
     &__images {
       display: flex;
       align-items: center;
@@ -248,7 +253,7 @@ $tablet-image-width: 30vh;
       padding-top: $padding-xsml;
     }
     &__logo1 {
-      visibility: visable;
+      display: none;
     }
     &__title {
       margin: $margin-sml 0 $margin-sml 0;
@@ -293,22 +298,18 @@ $tablet-image-width: 30vh;
     display: flex;
     // justify-content: flex-start;
     &__items {
-      // display: flex;
-      justify-content: flex-start;
+      display: flex;
     }
-    &__logo {
-      display: none;
+    &__logo2 {
+      border-style: solid;
+      border-color: white;
     }
+
     &__item {
       color: $bandsite-white;
       padding: 1rem;
       font-size: $fontsize-sml;
       // padding-left: 20%;
-    }
-    &__logo__header--item {
-      // border-style: solid;
-      // border-color: white;
-      margin: 10px 50px 0 50px;
     }
     &--title {
       color: $bandsite-white;
@@ -454,10 +455,10 @@ $tablet-image-width: 30vh;
       font-size: $fontsize-med;
     }
     &__logo {
-      display: none;
+      display: visable;
     }
     &__logo1 {
-      visibility: none;
+      display: none;
     }
   }
 
