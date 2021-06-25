@@ -32,10 +32,10 @@ $fontstyle-reg: regluar;
 $fontstyle-italic: italic;
 
 // Colors
-$bandsite-black: #323232;
+$bandsite-black: #000000;
 $bandsite-silver: #afafaf;
 $bandsite-white: #ffffff;
-$bandsite-dark_black: #000000;
+$bandsite-dark_black: #323232;
 $banksiee-mercury: #e1e1e1;
 $bandsite-alabaster: #fafafa;
 
@@ -58,6 +58,8 @@ $margin-lrg: 24px;
 // Photo Gallary Heights
 $tablet-image-height: 20vh;
 $tablet-image-width: 30vh;
+$desktop-image-height: 30vh;
+$desktop-image-width: 42vh;
 
 // Mixins
 @mixin mobile-imagesize {
@@ -73,6 +75,14 @@ $tablet-image-width: 30vh;
   background-repeat: no-repeat;
   height: $tablet-image-height;
   width: $tablet-image-width;
+  margin: $margin-sml 32px $margin-sml 0;
+}
+
+@mixin desktop-imagsize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $desktop-image-height;
+  width: $desktop-image-width;
   margin: $margin-sml 32px $margin-sml 0;
 }
 
@@ -331,7 +341,7 @@ $tablet-image-width: 30vh;
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      padding: $padding-xsml;
+      padding: $padding-sml 0 $padding-sml 0;
     }
     &__image1 {
       background-image: url(../assets/Images/Photo-gallery-1.jpg);
@@ -553,44 +563,45 @@ $tablet-image-width: 30vh;
     &__images {
       display: flex;
       flex-direction: row;
+      justify-content: center;
       flex-wrap: wrap;
-      padding: $padding-xsml;
+      padding: $padding-xsml 0 $padding-xsml 0;
     }
     &__image1 {
       background-image: url(../assets/Images/Photo-gallery-1.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image2 {
       background-image: url(../assets/Images/Photo-gallery-2.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image3 {
       background-image: url(../assets/Images/Photo-gallery-3.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image4 {
       background-image: url(../assets/Images/Photo-gallery-4.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image5 {
       background-image: url(../assets/Images/Photo-gallery-5.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image6 {
       background-image: url(../assets/Images/Photo-gallery-6.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image7 {
       background-image: url(../assets/Images/Photo-gallery-7.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image8 {
       background-image: url(../assets/Images/Photo-gallery-8.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
     &__image9 {
       background-image: url(../assets/Images/Photo-gallery-9.jpg);
-      @include tablet-imagesize;
+      @include desktop-imagsize;
     }
   }
   .hero {
@@ -644,7 +655,7 @@ $tablet-image-width: 30vh;
       font-weight: $fontweight-demi;
       margin-bottom: $margin-sml;
       // border-style: solid;
-      width: 65vw;
+      width: 70vw;
     }
     &__quote {
       font-size: $fontsize-xtasml;
@@ -653,24 +664,24 @@ $tablet-image-width: 30vh;
       // border-style: solid;
       width: 72vw;
       margin-bottom: $margin-sml;
-      margin-left: 5.5rem;
+      margin-left: 9rem;
     }
     &__title {
       margin-bottom: $margin-sml;
       font-size: $fontsize-sml;
       margin-top: $margin-sml;
-      padding-left: 70px;
+      padding-left: 120px;
     }
     &__writeup {
       margin: 0 $margin-sml $margin-sml $margin-sml;
       // border-style: solid;
       line-height: 25px;
-      height: 300px;
+      height: 150px;
     }
     &__paragraphs {
       display: flex;
       font-size: $fontsize-med;
-      padding: 0 50px $padding-sml 50px;
+      padding: 0 100px $padding-sml 100px;
     }
   }
   .footer {
