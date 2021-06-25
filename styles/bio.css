@@ -27,6 +27,9 @@
     padding: 1rem;
     font-size: 1.5rem;
   }
+  .header__logo {
+    display: visable;
+  }
   .header__logo__header--item {
     display: none;
   }
@@ -39,172 +42,198 @@
   .header__logo {
     margin: 16px;
   }
-}
-.hero {
-  width: 100vw;
-  height: auto;
-  margin-bottom: 24px;
-}
-.hero__image {
-  background-image: url(../assets/Images/hero-bio.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-.hero__image--bandname {
-  color: #ffffff;
-  padding-left: 16px;
-}
 
-.allabout {
-  padding: 16px;
-}
+  .hero {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 24px;
+  }
+  .hero__image {
+    background-image: url(../assets/Images/hero-bio.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .hero__image--bandname {
+    color: #ffffff;
+    padding-left: 16px;
+  }
 
-.imageandabout {
-  width: 100%;
-  height: 50%;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  margin-right: 16px;
-}
-.imageandabout__image {
-  background-image: url(../assets/Images/band.jpg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 35vh;
-  margin-bottom: 16px;
-}
-.imageandabout__summary {
-  font-size: 0.875rem;
-  margin-bottom: 16px;
-}
-.imageandabout__quote {
-  font-size: 0.875rem;
-  font-style: italic;
-  margin-bottom: 16px;
-}
-.imageandabout__title {
-  margin-bottom: 16px;
-}
-.imageandabout__writeup {
-  margin-bottom: 16px;
-  font-size: 0.8125rem;
-}
+  .allabout {
+    padding: 16px 0 16px 0;
+  }
+  .allabout__title {
+    padding-left: 1rem;
+  }
 
-.photogall {
-  width: 100%;
-  background-color: #fafafa;
-}
-.photogall__image1 {
-  background-image: url(../assets/Images/Photo-gallery-1.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image2 {
-  background-image: url(../assets/Images/Photo-gallery-2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image3 {
-  background-image: url(../assets/Images/Photo-gallery-3.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image4 {
-  background-image: url(../assets/Images/Photo-gallery-4.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image5 {
-  background-image: url(../assets/Images/Photo-gallery-5.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image6 {
-  background-image: url(../assets/Images/Photo-gallery-6.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image7 {
-  background-image: url(../assets/Images/Photo-gallery-7.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image8 {
-  background-image: url(../assets/Images/Photo-gallery-8.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
-.photogall__image9 {
-  background-image: url(../assets/Images/Photo-gallery-9.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 200px;
-  margin: 16px 0px 16px 0;
-}
+  .imageandabout {
+    width: 100%;
+    height: 50%;
+    margin-top: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 16px;
+  }
+  .imageandabout__image {
+    background-image: url(../assets/Images/band.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 90vw;
+    height: 25vh;
+    margin-bottom: 16px;
+  }
+  .imageandabout__summary {
+    font-size: 0.875rem;
+    margin-bottom: 16px;
+    width: 90vw;
+  }
+  .imageandabout__quote {
+    font-size: 0.875rem;
+    font-style: italic;
+    margin-bottom: 16px;
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+  .imageandabout__title {
+    margin-top: 3rem;
+    margin-right: auto;
+    margin-left: 1rem;
+  }
+  .imageandabout__writeup {
+    margin-bottom: 16px;
+    font-size: 0.8125rem;
+    line-height: 20px;
+  }
+  .imageandabout__paragraphs {
+    margin: 1rem;
+  }
 
-.footer {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 16px;
-}
-.footer__copyright {
-  font-size: 0.8125rem;
-  padding-top: 16px;
-}
-.footer__logo1 {
-  visibility: hidden;
-}
-.footer__title {
-  margin: 16px 0 16px 0;
-}
+  .photogall {
+    background-color: #fafafa;
+  }
+  .photogall__images {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .photogall__image1 {
+    background-image: url(../assets/Images/Photo-gallery-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image2 {
+    background-image: url(../assets/Images/Photo-gallery-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image3 {
+    background-image: url(../assets/Images/Photo-gallery-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image4 {
+    background-image: url(../assets/Images/Photo-gallery-4.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image5 {
+    background-image: url(../assets/Images/Photo-gallery-5.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image6 {
+    background-image: url(../assets/Images/Photo-gallery-6.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image7 {
+    background-image: url(../assets/Images/Photo-gallery-7.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image8 {
+    background-image: url(../assets/Images/Photo-gallery-8.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
+  .photogall__image9 {
+    background-image: url(../assets/Images/Photo-gallery-9.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 85%;
+    height: 25vh;
+    margin: 16px 0px 16px 0;
+  }
 
-.social {
-  display: flex;
-}
-.social__image {
-  width: 15px;
-  height: 15px;
-  padding: 5px;
-}
+  .footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 16px;
+  }
+  .footer__copyright {
+    font-size: 0.8125rem;
+    padding-top: 16px;
+  }
+  .footer__logo1 {
+    visibility: visable;
+  }
+  .footer__title {
+    margin: 16px 0 16px 0;
+  }
 
-.contact {
-  color: #ffffff;
-  font-size: 0.8125rem;
-  padding: 16px 0 16px 0;
-}
-.contact__info {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 16px;
-}
-.contact__info--name-job {
-  font-weight: 700;
-  padding-bottom: 16px;
-}
+  .social {
+    display: flex;
+  }
+  .social__image {
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+  }
 
+  .contact {
+    color: #ffffff;
+    font-size: 0.8125rem;
+    padding: 16px 0 16px 0;
+  }
+  .contact__info {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 16px;
+  }
+  .contact__info--name-job {
+    font-weight: 700;
+    padding-bottom: 16px;
+  }
+}
 @media (min-width: 768px) {
   .section1 {
     width: 100vw;
@@ -228,8 +257,6 @@
     font-size: 1.5rem;
   }
   .header__logo__header--item {
-    border-style: solid;
-    border-color: white;
     margin: 10px 50px 0 50px;
   }
   .header--title {
@@ -249,78 +276,79 @@
   }
   .photogall__images {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
   }
   .photogall__image1 {
     background-image: url(../assets/Images/Photo-gallery-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image2 {
     background-image: url(../assets/Images/Photo-gallery-2.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image3 {
     background-image: url(../assets/Images/Photo-gallery-3.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image4 {
     background-image: url(../assets/Images/Photo-gallery-4.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image5 {
     background-image: url(../assets/Images/Photo-gallery-5.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image6 {
     background-image: url(../assets/Images/Photo-gallery-6.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image7 {
     background-image: url(../assets/Images/Photo-gallery-7.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image8 {
     background-image: url(../assets/Images/Photo-gallery-8.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
   .photogall__image9 {
     background-image: url(../assets/Images/Photo-gallery-9.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    height: 300px;
-    width: 375px;
+    height: 20vh;
+    width: 30vh;
     margin: 16px 32px 16px 0;
   }
 
@@ -341,20 +369,20 @@
   .hero__image--bandname {
     color: #ffffff;
     padding-left: 30px;
-    font-size: 100px;
+    font-size: 3.75rem;
   }
 
   .allabout {
     padding: 16px;
   }
   .allabout__title {
-    font-size: 3.75rem;
+    font-size: 2.25rem;
     padding-left: 56px;
   }
 
   .imageandabout {
     width: 100%;
-    height: 2000px;
+    height: 1000px;
     margin-top: 16px;
   }
   .imageandabout__image {
@@ -367,29 +395,29 @@
     margin-right: auto;
   }
   .imageandabout__summary {
-    font-size: 3.75rem;
+    font-size: 1.5rem;
     margin-bottom: 16px;
   }
   .imageandabout__quote {
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     font-style: italic;
     margin-bottom: 16px;
   }
   .imageandabout__title {
     margin-bottom: 24px;
-    font-size: 2.25rem;
+    font-size: 1.5rem;
     margin-top: 24px;
     padding-left: 52px;
   }
   .imageandabout__writeup {
     margin: 16px;
-    line-height: 50px;
-    height: 1000px;
+    line-height: 25px;
+    height: 300px;
   }
   .imageandabout__paragraphs {
     display: flex;
     font-size: 2.25rem;
-    padding: 40px;
+    padding: 24px;
   }
 
   .footer {
@@ -406,33 +434,32 @@
     display: flex;
   }
   .footer__title {
-    font-size: 3.75rem;
+    font-size: 2.25rem;
   }
   .footer__logo {
-    visibility: hidden;
+    display: none;
   }
   .footer__logo1 {
-    margin-left: auto;
-    padding-right: 50px;
+    visibility: none;
   }
 
   .social {
     display: flex;
+    padding-top: 20px;
+    margin-left: 45px;
   }
   .social__image {
-    width: 40px;
-    height: 40px;
-    padding: 10px;
-    margin: 10px;
+    width: 20px;
+    height: 20px;
   }
 
   .contact {
     color: #ffffff;
-    font-size: 1.5rem;
     padding: 16px 0 16px 0;
     display: flex;
   }
   .contact__info {
+    font-size: 0.875rem;
     display: flex;
     padding: 16px;
     border-color: white;
@@ -441,9 +468,11 @@
   }
   .contact__details {
     padding-bottom: 40px;
+    font-size: 0.875rem;
   }
   .contact--name-job {
     font-weight: 700;
     padding-bottom: 16px;
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=bio.css.map */
