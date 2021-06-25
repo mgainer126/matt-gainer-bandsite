@@ -299,10 +299,11 @@ $tablet-image-width: 30vh;
     // justify-content: flex-start;
     &__items {
       display: flex;
+      justify-content: flex-start;
+      margin-left: 10vw;
     }
     &__logo2 {
-      border-style: solid;
-      border-color: white;
+      padding-right: 16px;
     }
 
     &__item {
@@ -323,12 +324,14 @@ $tablet-image-width: 30vh;
     background-color: #fafafa;
     margin: $margin-lrg;
     &__title {
-      font-size: $fontsize-lg;
+      font-size: $fontsize-med;
+      padding: $padding-sml 0 $padding-sml 0;
     }
     &__images {
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
+      padding: $padding-xsml;
     }
     &__image1 {
       background-image: url(../assets/Images/Photo-gallery-1.jpg);
@@ -389,6 +392,7 @@ $tablet-image-width: 30vh;
   .allabout {
     // border-style: solid;
     padding: $padding-xsml;
+    margin: 0 $margin-lrg 0 $margin-lrg;
     &__title {
       font-size: $fontsize-med;
       padding-left: $padding-lg;
@@ -414,21 +418,28 @@ $tablet-image-width: 30vh;
     }
     &__summary {
       font-size: $fontsize-sml;
+      font-weight: $fontweight-demi;
       margin-bottom: $margin-sml;
+      // border-style: solid;
+      width: 65vw;
     }
     &__quote {
-      font-size: $fontsize-sml;
+      font-size: $fontsize-xtasml;
       font-style: $fontstyle-italic;
+      font-weight: $fontweight-demi;
+      // border-style: solid;
+      width: 72vw;
       margin-bottom: $margin-sml;
+      margin-left: 5.5rem;
     }
     &__title {
-      margin-bottom: $margin-lrg;
+      margin-bottom: $margin-sml;
       font-size: $fontsize-sml;
-      margin-top: $margin-lrg;
-      padding-left: 52px;
+      margin-top: $margin-sml;
+      padding-left: 70px;
     }
     &__writeup {
-      margin: $margin-sml;
+      margin: 0 $margin-sml $margin-sml $margin-sml;
       // border-style: solid;
       line-height: 25px;
       height: 300px;
@@ -436,7 +447,7 @@ $tablet-image-width: 30vh;
     &__paragraphs {
       display: flex;
       font-size: $fontsize-med;
-      padding: $padding-sml;
+      padding: 0 50px $padding-sml 50px;
     }
   }
   .footer {
@@ -445,7 +456,7 @@ $tablet-image-width: 30vh;
     padding: $padding-xsml;
     height: 500px;
     &__copyright {
-      font-size: $fontsize-sml;
+      font-size: $fontsize-xtasml;
       padding-top: $padding-xsml;
     }
     &__head {
@@ -455,10 +466,10 @@ $tablet-image-width: 30vh;
       font-size: $fontsize-med;
     }
     &__logo {
-      display: visable;
+      display: none;
     }
     &__logo1 {
-      display: none;
+      display: visable;
     }
   }
 
