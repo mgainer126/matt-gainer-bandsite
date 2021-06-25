@@ -285,7 +285,7 @@ $tablet-image-width: 30vh;
   }
 }
 
-// This is where 320 ends
+// This above is the terminator for tablet
 
 @media (min-width: 768px) {
   .section1 {
@@ -472,7 +472,6 @@ $tablet-image-width: 30vh;
       display: visable;
     }
   }
-
   .social {
     display: flex;
     // border-style: solid;
@@ -510,3 +509,225 @@ $tablet-image-width: 30vh;
   }
 }
 // This above is the terminator for tablet
+
+@media (min-width: 1279px) {
+  .section1 {
+    width: 100vw;
+  }
+  .header {
+    background-color: $bandsite-dark_black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    // justify-content: flex-start;
+    &__items {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 10vw;
+    }
+    &__logo2 {
+      padding-right: 16px;
+    }
+
+    &__item {
+      color: $bandsite-white;
+      padding: 1rem;
+      font-size: $fontsize-sml;
+      // padding-left: 20%;
+    }
+    &--title {
+      color: $bandsite-white;
+      font-size: $fontsize-lg;
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+  }
+  .photogall {
+    width: 100vw;
+    background-color: #fafafa;
+    margin: $margin-lrg;
+    &__title {
+      font-size: $fontsize-med;
+      padding: $padding-sml 0 $padding-sml 0;
+    }
+    &__images {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: $padding-xsml;
+    }
+    &__image1 {
+      background-image: url(../assets/Images/Photo-gallery-1.jpg);
+      @include tablet-imagesize;
+    }
+    &__image2 {
+      background-image: url(../assets/Images/Photo-gallery-2.jpg);
+      @include tablet-imagesize;
+    }
+    &__image3 {
+      background-image: url(../assets/Images/Photo-gallery-3.jpg);
+      @include tablet-imagesize;
+    }
+    &__image4 {
+      background-image: url(../assets/Images/Photo-gallery-4.jpg);
+      @include tablet-imagesize;
+    }
+    &__image5 {
+      background-image: url(../assets/Images/Photo-gallery-5.jpg);
+      @include tablet-imagesize;
+    }
+    &__image6 {
+      background-image: url(../assets/Images/Photo-gallery-6.jpg);
+      @include tablet-imagesize;
+    }
+    &__image7 {
+      background-image: url(../assets/Images/Photo-gallery-7.jpg);
+      @include tablet-imagesize;
+    }
+    &__image8 {
+      background-image: url(../assets/Images/Photo-gallery-8.jpg);
+      @include tablet-imagesize;
+    }
+    &__image9 {
+      background-image: url(../assets/Images/Photo-gallery-9.jpg);
+      @include tablet-imagesize;
+    }
+  }
+  .hero {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 24px;
+    &__image {
+      background-image: url(../assets/Images/hero-bio.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &--bandname {
+        color: $bandsite-white;
+        padding-left: 30px;
+        font-size: $fontsize-lg;
+      }
+    }
+  }
+  .allabout {
+    // border-style: solid;
+    padding: $padding-xsml;
+    margin: 0 $margin-lrg 0 $margin-lrg;
+    &__title {
+      font-size: $fontsize-med;
+      padding-left: $padding-lg;
+    }
+  }
+  .imageandabout {
+    // border-style: solid;
+    width: 100%;
+    height: 1000px;
+    margin-top: 16px;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // margin-right: $margin-sml;
+    &__image {
+      background-image: url(../assets/Images/band.jpg);
+      background-size: cover;
+      width: 75%;
+      height: 75%;
+      margin-bottom: $margin-sml;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__summary {
+      font-size: $fontsize-sml;
+      font-weight: $fontweight-demi;
+      margin-bottom: $margin-sml;
+      // border-style: solid;
+      width: 65vw;
+    }
+    &__quote {
+      font-size: $fontsize-xtasml;
+      font-style: $fontstyle-italic;
+      font-weight: $fontweight-demi;
+      // border-style: solid;
+      width: 72vw;
+      margin-bottom: $margin-sml;
+      margin-left: 5.5rem;
+    }
+    &__title {
+      margin-bottom: $margin-sml;
+      font-size: $fontsize-sml;
+      margin-top: $margin-sml;
+      padding-left: 70px;
+    }
+    &__writeup {
+      margin: 0 $margin-sml $margin-sml $margin-sml;
+      // border-style: solid;
+      line-height: 25px;
+      height: 300px;
+    }
+    &__paragraphs {
+      display: flex;
+      font-size: $fontsize-med;
+      padding: 0 50px $padding-sml 50px;
+    }
+  }
+  .footer {
+    background-color: $bandsite-dark_black;
+    color: $bandsite-white;
+    padding: $padding-xsml;
+    height: 500px;
+    &__copyright {
+      font-size: $fontsize-xtasml;
+      padding-top: $padding-xsml;
+    }
+    &__head {
+      display: flex;
+    }
+    &__title {
+      font-size: $fontsize-med;
+    }
+    &__logo {
+      display: none;
+    }
+    &__logo1 {
+      display: visable;
+    }
+  }
+  .social {
+    display: flex;
+    // border-style: solid;
+    // border-color: white;
+    padding-top: 20px;
+    margin-left: 45px;
+    &__image {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .contact {
+    color: $bandsite-white;
+    padding: $padding-xsml 0 $padding-xsml 0;
+    display: flex;
+    &__info {
+      font-size: $fontsize-xtasml;
+      display: flex;
+      // flex-direction: column;
+      padding: $padding-xsml;
+      // border-style: solid;
+      border-color: white;
+      width: 400px;
+      height: 200px;
+    }
+    &__details {
+      padding-bottom: $padding-med;
+      font-size: $fontsize-xtasml;
+    }
+    &--name-job {
+      font-weight: $fontweight-bold;
+      padding-bottom: $padding-xsml;
+      font-size: $fontsize-sml;
+    }
+  }
+}
