@@ -1,6 +1,24 @@
-@mixin mobile-imgsize {
+// Mixins
+@mixin mobile-imagesize {
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  width: 90%;
+  height: 30vh;
   margin: $margin-sml 0px $margin-sml 0;
+}
+
+@mixin tablet-imagesize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $tablet-image-height;
+  width: $tablet-image-width;
+  margin: $margin-sml 32px $margin-sml 0;
+}
+
+@mixin desktop-imagsize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100px;
+  width: $desktop-image-width;
+  margin: $margin-sml 32px $margin-sml 0;
 }
