@@ -59,14 +59,14 @@ $margin-lrg: 24px;
 $tablet-image-height: 15vh;
 $tablet-image-width: 25vh;
 $desktop-image-height: 30vh;
-$desktop-image-width: 42vh;
+$desktop-image-width: 50vh;
 
 // Mixins
 @mixin mobile-imagesize {
   background-size: cover;
   background-repeat: no-repeat;
-  width: 85%;
-  height: 25vh;
+  width: 90%;
+  height: 30vh;
   margin: $margin-sml 0px $margin-sml 0;
 }
 
@@ -112,7 +112,6 @@ $desktop-image-width: 42vh;
       color: $bandsite-white;
       padding: 1rem;
       font-size: $fontsize-sml;
-      width: 110px;
       // border: 3px solid white;
       font-size: $fontsize-sml;
     }
@@ -122,12 +121,15 @@ $desktop-image-width: 42vh;
       // border-style: solid;
       // border-color: red;
       width: 320px;
+      &--logo {
+        display: flex;
+        align-items: center;
+      }
     }
     &__item--border {
       color: $bandsite-white;
       padding: 1rem;
       font-size: $fontsize-sml;
-      width: 110px;
       border-bottom: 3px solid white;
       font-size: $fontsize-sml;
     }
@@ -146,6 +148,7 @@ $desktop-image-width: 42vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      margin-bottom: 12px;
       &--bandname {
         color: $bandsite-white;
         padding-left: 16px;
@@ -154,9 +157,10 @@ $desktop-image-width: 42vh;
   }
 
   .allabout {
-    padding: $padding-xsml 0 $padding-xsml 0;
+    padding: 0 0 0 0;
     &__title {
-      padding-left: 1rem;
+      padding: 12px;
+      padding-left: 15px;
     }
   }
 
@@ -292,6 +296,12 @@ $desktop-image-width: 42vh;
         padding-bottom: $padding-xsml;
       }
     }
+    &__list {
+      list-style: none;
+      &--copyright {
+        list-style: none;
+      }
+    }
   }
 }
 
@@ -321,6 +331,10 @@ $desktop-image-width: 42vh;
       padding: 1rem;
       font-size: $fontsize-sml;
       // padding-left: 20%;
+    }
+    &__links--logo {
+      display: flex;
+      align-items: center;
     }
     &--title {
       color: $bandsite-white;
@@ -475,6 +489,7 @@ $desktop-image-width: 42vh;
     }
     &__title {
       font-size: $fontsize-med;
+      margin-left: 2vw;
     }
     &__logo {
       display: visable;
@@ -501,6 +516,13 @@ $desktop-image-width: 42vh;
     color: $bandsite-white;
     padding: $padding-xsml 0 $padding-xsml 0;
     display: flex;
+    &__list {
+      list-style: none;
+      &--copyright {
+        margin-left: vw;
+        list-style: none;
+      }
+    }
     &__info {
       font-size: $fontsize-xtasml;
       display: flex;
@@ -703,51 +725,63 @@ $desktop-image-width: 42vh;
     }
     &__title {
       font-size: $fontsize-med;
-      margin-left: $margin-sml;
+      margin-left: 8.2vw;
     }
     &__logo {
       display: visable;
       position: relative;
-      left: 68%;
+      left: 75%;
       bottom: 60%;
     }
     // &__logo1 {
     //   display: visable;
     // }
-  }
-  .social {
-    display: flex;
-    // border-style: solid;
-    // border-color: white;
-    padding-top: 20px;
-    margin-left: 45px;
-    &__image {
-      width: 20px;
-      height: 20px;
-    }
-  }
-  .contact {
-    color: $bandsite-white;
-    padding: $padding-xsml 0 $padding-xsml 0;
-    display: flex;
-    &__info {
-      font-size: $fontsize-xtasml;
+
+    .social {
       display: flex;
-      // flex-direction: column;
-      padding: $padding-xsml;
       // border-style: solid;
-      border-color: white;
-      width: 400px;
-      // height: 50px;
+      // border-color: white;
+      padding-top: 20px;
+      margin-left: 45px;
+      &__image {
+        width: 20px;
+        height: 20px;
+      }
     }
-    &__details {
-      padding-bottom: $padding-med;
-      font-size: $fontsize-xtasml;
-    }
-    &--name-job {
-      font-weight: $fontweight-bold;
-      padding-bottom: $padding-xsml;
-      font-size: $fontsize-sml;
+    .contact {
+      color: $bandsite-white;
+      padding: $padding-xsml 0 $padding-xsml 0;
+      display: flex;
+      justify-content: center;
+      &__list {
+        list-style: none;
+        &--copyright {
+          margin-left: 7vw;
+          list-style: none;
+        }
+      }
+      &__info {
+        font-size: $fontsize-xtasml;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // flex-direction: column;
+        padding: $padding-xsml;
+        // border-style: solid;
+        border-color: white;
+        width: 400px;
+        // height: 50px;
+      }
+      &__details {
+        padding-bottom: $padding-med;
+        font-size: $fontsize-xtasml;
+      }
+      &--name-job {
+        font-weight: $fontweight-bold;
+        padding-bottom: $padding-xsml;
+        font-size: $fontsize-sml;
+      }
     }
   }
 }
