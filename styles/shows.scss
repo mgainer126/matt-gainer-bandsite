@@ -1,0 +1,671 @@
+// Font Sizes
+// 60px
+$fontsize-lg: 3.75rem;
+// 36px
+$fontsize-med: 2.25rem;
+// 24px
+$fontsize-sml: 1.5rem;
+// 14px
+$fontsize-xtasml: 0.875rem;
+// 13px
+$fontsize-xxtasml: 0.8125rem;
+// 12px
+$fontsize-xxxtasml: 0.75rem;
+// 10px
+$fontsize-xxxxtasml: 0.625rem;
+
+// Line Heights
+$lineheight-lg: 68px;
+$lineheight-medlrg: 44px;
+$lineheight-med: 32px;
+$lineheight-smlmed: 22px;
+$lineheight-sml: 20px;
+$lineheight-xsmal: 18px;
+
+// Font Weights
+$fontweight-bold: 700;
+$fontweight-demi: 600;
+$fontweight-reg: 400;
+
+// Font Style
+$fontstyle-reg: regluar;
+$fontstyle-italic: italic;
+
+// Colors
+$bandsite-black: #000000;
+$bandsite-silver: #afafaf;
+$bandsite-white: #ffffff;
+$bandsite-dark_black: #323232;
+$banksiee-mercury: #e1e1e1;
+$bandsite-alabaster: #fafafa;
+
+// Padding
+$padding-xxlg: 80px;
+$padding-xl: 64px;
+$padding-lg: 56px;
+$padding-medlg: 48px;
+$padding-med: 40px;
+$padding-smlmed: 32px;
+$padding-sml: 24px;
+$padding-xsml: 16px;
+$padding-xxsml: 8px;
+$padding-xxxsml: 4;
+
+// Margins
+$margin-sml: 16px;
+$margin-lrg: 24px;
+
+// Photo Gallary Heights
+$tablet-image-height: 15vh;
+$tablet-image-width: 25vh;
+$desktop-image-height: 20vh;
+$desktop-image-width: 35vh;
+
+// Mixins
+@mixin mobile-imagesize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 90%;
+  height: 30vh;
+  margin: $margin-sml 0px $margin-sml 0;
+}
+
+@mixin tablet-imagesize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $tablet-image-height;
+  width: $tablet-image-width;
+  margin: $margin-sml 32px $margin-sml 0;
+}
+
+@mixin desktop-imagsize {
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $desktop-image-height;
+  width: $desktop-image-width;
+  margin: $margin-sml 32px $margin-sml 0;
+}
+
+@media (min-width: 320px) {
+  .section1 {
+    width: 100vw;
+  }
+
+  .header {
+    background-color: $bandsite-dark_black;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 20px;
+    &__logo2 {
+      display: visable;
+    }
+    &__items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    &__item {
+      color: $bandsite-white;
+      padding: 1rem;
+      font-size: $fontsize-sml;
+      // border: 3px solid white;
+      font-size: $fontsize-sml;
+    }
+    &__links {
+      display: flex;
+      justify-content: space-evenly;
+      // border-style: solid;
+      // border-color: red;
+      width: 320px;
+      &--logo {
+        display: flex;
+        align-items: center;
+      }
+    }
+    &__item--border {
+      color: $bandsite-white;
+      padding: 1rem;
+      font-size: $fontsize-sml;
+      border-bottom: 3px solid white;
+      font-size: $fontsize-sml;
+    }
+  }
+  // padding-left: 20%;
+
+  .hero {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 24px;
+    &__image {
+      background-image: url(../assets/Images/hero-shows.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 12px;
+      color: $bandsite-white;
+    }
+    &__albuminfo {
+      padding: 0;
+    }
+    &--bandname {
+      color: $bandsite-white;
+    }
+    &__item {
+      padding: $padding-sml;
+    }
+  }
+
+  .allabout {
+    padding: 0 0 0 0;
+    &__title {
+      padding: 12px;
+      padding-left: 15px;
+    }
+    &__shows {
+      padding: $padding-sml;
+      list-style: none;
+      &--title {
+        display: none;
+      }
+    }
+    &__itemtitle {
+      padding: $padding-xxsml;
+      color: $bandsite-silver;
+    }
+    &__item {
+      padding: $padding-xxsml;
+      font-weight: $fontweight-bold;
+    }
+    &__button {
+      padding: $padding-xsml;
+      width: 100%;
+      background-color: $bandsite-dark_black;
+      color: $bandsite-white;
+      border-radius: 10%;
+    }
+  }
+
+  .footer {
+    background-color: $bandsite-dark_black;
+    color: $bandsite-white;
+    padding: $padding-xsml;
+    &__copyright {
+      font-size: $fontsize-xxtasml;
+      padding-top: $padding-xsml;
+    }
+    &__logo1 {
+      display: none;
+    }
+    &__title {
+      margin: $margin-sml 0 $margin-sml 0;
+    }
+  }
+
+  .social {
+    display: flex;
+    &__image {
+      width: 15px;
+      height: 15px;
+      padding: 5px;
+    }
+  }
+
+  .contact {
+    color: $bandsite-white;
+    font-size: $fontsize-xxtasml;
+    padding: $padding-xsml 0 $padding-xsml 0;
+    &__info {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: $padding-xsml;
+      &--name-job {
+        font-weight: $fontweight-bold;
+        padding-bottom: $padding-xsml;
+      }
+    }
+    &__list {
+      list-style: none;
+      &--copyright {
+        list-style: none;
+      }
+    }
+  }
+}
+
+// This above is the terminator for tablet
+
+@media (min-width: 768px) {
+  .section1 {
+    width: 100vw;
+  }
+  .header {
+    background-color: $bandsite-dark_black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    // justify-content: flex-start;
+    &__items {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 10vw;
+    }
+    &__logo2 {
+      padding-right: 16px;
+    }
+
+    &__item {
+      color: $bandsite-white;
+      padding: 1rem;
+      font-size: $fontsize-sml;
+      // padding-left: 20%;
+    }
+    &__links--logo {
+      display: flex;
+      align-items: center;
+    }
+    &--title {
+      color: $bandsite-white;
+      font-size: $fontsize-lg;
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+  }
+  .hero {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 24px;
+    &__image {
+      background-image: url(../assets/Images/hero-shows.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-bottom: 12px;
+      color: $bandsite-white;
+    }
+    &__albuminfo {
+      padding: 0;
+    }
+    &--bandname {
+      color: $bandsite-white;
+    }
+    &__item {
+      padding: $padding-sml;
+    }
+  }
+
+  .allabout {
+    padding: 0 0 0 0;
+    &__title {
+      padding: 12px;
+      padding-left: 15px;
+      display: flex;
+    }
+    &__shows {
+      padding: $padding-sml;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-bottom: solid $bandsite-silver 1px;
+      &--title {
+        color: $bandsite-silver;
+        padding: $padding-sml;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+      }
+    }
+    &__itemtitle {
+      padding: $padding-xxsml;
+      color: $bandsite-silver;
+      display: none;
+    }
+    &__item {
+      padding: $padding-xxsml;
+      font-size: 0.8rem;
+      font-weight: $fontweight-bold;
+      width: 20%;
+      &--placehold {
+        width: 15rem;
+      }
+    }
+    &__button {
+      padding: $padding-xxsml;
+      width: 10rem;
+      height: 2rem;
+      background-color: $bandsite-dark_black;
+      color: $bandsite-white;
+      border-radius: 10%;
+      text-align: center;
+    }
+  }
+  .imageandabout {
+    // border-style: solid;
+    width: 100%;
+    height: 1000px;
+    margin-top: 16px;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // margin-right: $margin-sml;
+    &__image {
+      background-image: url(../assets/Images/band.jpg);
+      background-size: cover;
+      width: 75%;
+      height: 75%;
+      margin-bottom: $margin-sml;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__summary {
+      font-size: $fontsize-sml;
+      font-weight: $fontweight-demi;
+      margin-bottom: $margin-sml;
+      // border-style: solid;
+      width: 65vw;
+    }
+    &__quote {
+      font-size: $fontsize-xtasml;
+      font-style: $fontstyle-italic;
+      font-weight: $fontweight-demi;
+      // border-style: solid;
+      width: 72vw;
+      margin-bottom: $margin-sml;
+      margin-left: 5.5rem;
+    }
+    &__title {
+      margin-bottom: $margin-sml;
+      font-size: $fontsize-sml;
+      margin-top: $margin-sml;
+      padding-left: 70px;
+    }
+    &__writeup {
+      margin: 0 $margin-sml $margin-sml $margin-sml;
+      // border-style: solid;
+      line-height: 25px;
+      height: 300px;
+    }
+    &__paragraphs {
+      display: flex;
+      font-size: $fontsize-med;
+      padding: 0 50px $padding-sml 50px;
+    }
+  }
+  .footer {
+    background-color: $bandsite-dark_black;
+    color: $bandsite-white;
+    padding: $padding-xsml;
+    height: 400px;
+    &__copyright {
+      font-size: $fontsize-xtasml;
+      padding-top: $padding-xsml;
+    }
+    &__head {
+      display: flex;
+    }
+    &__title {
+      font-size: $fontsize-med;
+      margin-left: 2vw;
+    }
+    &__logo {
+      display: visable;
+      position: relative;
+      left: 69%;
+      bottom: 77%;
+    }
+    &__logo1 {
+      display: visable;
+    }
+  }
+  .social {
+    display: flex;
+    // border-style: solid;
+    // border-color: white;
+    padding-top: 20px;
+    margin-left: 45px;
+    &__image {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .contact {
+    color: $bandsite-white;
+    padding: $padding-xsml 0 $padding-xsml 0;
+    display: flex;
+    &__list {
+      list-style: none;
+      &--copyright {
+        margin-left: vw;
+        list-style: none;
+      }
+    }
+    &__info {
+      font-size: $fontsize-xtasml;
+      display: flex;
+      // flex-direction: column;
+      padding: $padding-xsml;
+      // border-style: solid;
+      border-color: white;
+      width: 400px;
+      height: 200px;
+    }
+    &__details {
+      padding-bottom: $padding-med;
+      font-size: $fontsize-xtasml;
+    }
+    &--name-job {
+      font-weight: $fontweight-bold;
+      padding-bottom: $padding-xsml;
+      font-size: $fontsize-sml;
+    }
+  }
+}
+// This above is the terminator for tablet
+
+@media (min-width: 1279px) {
+  .section1 {
+    width: 100vw;
+  }
+  .header {
+    background-color: $bandsite-dark_black;
+    width: 100%;
+    height: auto;
+    display: flex;
+    // justify-content: flex-start;
+    &__items {
+      display: flex;
+      justify-content: flex-start;
+      margin-left: 10vw;
+    }
+    &__logo2 {
+      padding-right: 16px;
+    }
+
+    &__item {
+      color: $bandsite-white;
+      padding: 1rem;
+      font-size: $fontsize-sml;
+      // padding-left: 20%;
+    }
+    &--title {
+      color: $bandsite-white;
+      font-size: $fontsize-lg;
+      padding-left: 25%;
+      padding-right: 25%;
+    }
+  }
+  .hero {
+    width: 100vw;
+    height: auto;
+    margin-bottom: 24px;
+    &__image {
+      background-image: url(../assets/Images/hero-shows.jpg);
+      background-size: cover;
+      width: 100%;
+      height: 700px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      &--bandname {
+        color: $bandsite-white;
+        padding-left: 30px;
+        font-size: $fontsize-lg;
+      }
+    }
+    &__item {
+      font-weight: $fontweight-bold;
+      font-size: $fontsize-med;
+      padding-left: 10px;
+    }
+    &__albuminfo--alignment {
+      display: flex;
+      justify-content: space-evenly;
+      list-style: none;
+    }
+  }
+  .allabout {
+    // border-style: solid;
+    padding: $padding-xsml;
+    margin: 0 $margin-lrg 0 $margin-lrg;
+    &__title {
+      font-size: $fontsize-med;
+      padding-left: $padding-lg;
+    }
+  }
+  .imageandabout {
+    // border-style: solid;
+    width: 100%;
+    height: 1000px;
+    margin-top: 16px;
+    // display: flex;
+    // flex-direction: column;
+    // align-content: center;
+    // margin-right: $margin-sml;
+    &__image {
+      background-image: url(../assets/Images/band.jpg);
+      background-size: cover;
+      width: 75%;
+      height: 75%;
+      margin-bottom: $margin-sml;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    &__summary {
+      font-size: $fontsize-sml;
+      font-weight: $fontweight-demi;
+      margin-bottom: $margin-sml;
+      // border-style: solid;
+      width: 70vw;
+    }
+    &__quote {
+      font-size: $fontsize-xtasml;
+      font-style: $fontstyle-italic;
+      font-weight: $fontweight-demi;
+      // border-style: solid;
+      width: 72vw;
+      margin-bottom: $margin-sml;
+      margin-left: 9rem;
+    }
+    &__title {
+      margin-bottom: $margin-sml;
+      font-size: $fontsize-sml;
+      margin-top: $margin-sml;
+      padding-left: 120px;
+    }
+    &__writeup {
+      margin: 0 $margin-sml $margin-sml $margin-sml;
+      // border-style: solid;
+      line-height: 25px;
+      height: 150px;
+    }
+    &__paragraphs {
+      display: flex;
+      font-size: $fontsize-med;
+      padding: 0 100px $padding-sml 100px;
+    }
+  }
+  .footer {
+    background-color: $bandsite-dark_black;
+    color: $bandsite-white;
+    padding: $padding-xsml;
+    height: 500px;
+    &__copyright {
+      font-size: $fontsize-xtasml;
+      padding-top: $padding-xsml;
+      margin-left: $margin-sml;
+    }
+    &__head {
+      display: flex;
+    }
+    &__title {
+      font-size: $fontsize-med;
+      margin-left: 8.2vw;
+    }
+    &__logo {
+      display: visable;
+      position: relative;
+      left: 75%;
+      bottom: 60%;
+    }
+    // &__logo1 {
+    //   display: visable;
+    // }
+
+    .social {
+      display: flex;
+      // border-style: solid;
+      // border-color: white;
+      padding-top: 20px;
+      margin-left: 45px;
+      &__image {
+        width: 20px;
+        height: 20px;
+      }
+    }
+    .contact {
+      color: $bandsite-white;
+      padding: $padding-xsml 0 $padding-xsml 0;
+      display: flex;
+      justify-content: center;
+      &__list {
+        list-style: none;
+        &--copyright {
+          margin-left: 7vw;
+          list-style: none;
+        }
+      }
+      &__info {
+        font-size: $fontsize-xtasml;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        // flex-direction: column;
+        padding: $padding-xsml;
+        // border-style: solid;
+        border-color: white;
+        width: 400px;
+        // height: 50px;
+      }
+      &__details {
+        padding-bottom: $padding-med;
+        font-size: $fontsize-xtasml;
+      }
+      &--name-job {
+        font-weight: $fontweight-bold;
+        padding-bottom: $padding-xsml;
+        font-size: $fontsize-sml;
+      }
+    }
+  }
+}
