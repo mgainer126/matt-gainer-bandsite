@@ -33,7 +33,7 @@
       <about>
         <h2 class="allabout__title">About the Musicians</h2>
         <div class="imageandabout">
-          <div class="imageandabout__image"></div>
+          <img class="imageandabout__image" src="/assets/Images/band.jpg" width= 90%>
           <p class="imageandabout__summary">
           "We push each other to be the best. It's not uncommon for one of us to
           say 'this needs to be better, back to the drawing board'"
@@ -69,15 +69,15 @@
           <div class="photogall">
             <h2 class="photogall__title">Photo Gallery</h2>
             <div class="photogall__images">
-              <div class="photogall__image1"></div>
-              <div class="photogall__image2"></div>
-              <div class="photogall__image3"></div>
-              <div class="photogall__image4"></div>
-              <div class="photogall__image5"></div>
-              <div class="photogall__image6"></div>
-              <div class="photogall__image7"></div>
-              <div class="photogall__image8"></div>
-              <div class="photogall__image9"></div>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-1.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-2.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-3.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-4.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-5.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-6.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-7.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-8.jpg" width=90%>
+              <img class="photogall__image" src="assets/Images/Photo-gallery-9.jpg" width=90%>
             </div>
           </div>
 
@@ -86,22 +86,24 @@
       </photogall>
   
    <!-- COMMENTS SECTION -->
+<h3>Join The Coversation</h3>
+<div class='comments'>  
+  <img class ="comments__selfie" src="assets/Images/Mohan-muruge.jpg"> 
+  <form id="comment__form">
+    <div class="commentform__contents">
+      <label for="name">NAME</label><br>
+      <div class ="commentForm__contents--alignment">
+        <input type="text" id="name" placeholder = "Enter Your Name">
+        <label for="comment">COMMENT</label><br>
+        <input type="text" id="name" placeholder = "Add A New Comment">
+        <button type="submit">Comment</button>
+    </div>
+    </div>
+  </form>
+</div>
+  <div id="comment"></div>
 
-  <div class="comment">
-   <form action="" class="comment__form">
-      <h3 class="comment__name-title">Enter Your Name</h3>
-      <input class="comment-name-input" type="text" placeholder="This is a text input">
-      <h3 class="comment__txt-title">Add a new comment</h3>
-      <input class ="comment__text" type="text" placeholder="This is a text input">
-   </form>
-   <button class="comment__button">Comment</button>
-  </div>
-  <div class="comment__history">
-    <h3 class="comment__history-name"></h3>
-    <p class="comment__history-date"></p>
-    <p class="comment__text"></p>
-  </div>
-
+  <!-- COMMENT SECTION END -->
 
 
       <footer class="footer">

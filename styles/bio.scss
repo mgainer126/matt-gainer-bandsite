@@ -1,90 +1,5 @@
-// Font Sizes
-// 60px
-$fontsize-lg: 3.75rem;
-// 36px
-$fontsize-med: 2.25rem;
-// 24px
-$fontsize-sml: 1.5rem;
-// 14px
-$fontsize-xtasml: 0.875rem;
-// 13px
-$fontsize-xxtasml: 0.8125rem;
-// 12px
-$fontsize-xxxtasml: 0.75rem;
-// 10px
-$fontsize-xxxxtasml: 0.625rem;
-
-// Line Heights
-$lineheight-lg: 68px;
-$lineheight-medlrg: 44px;
-$lineheight-med: 32px;
-$lineheight-smlmed: 22px;
-$lineheight-sml: 20px;
-$lineheight-xsmal: 18px;
-
-// Font Weights
-$fontweight-bold: 700;
-$fontweight-demi: 600;
-$fontweight-reg: 400;
-
-// Font Style
-$fontstyle-reg: regluar;
-$fontstyle-italic: italic;
-
-// Colors
-$bandsite-black: #000000;
-$bandsite-silver: #afafaf;
-$bandsite-white: #ffffff;
-$bandsite-dark_black: #323232;
-$banksiee-mercury: #e1e1e1;
-$bandsite-alabaster: #fafafa;
-
-// Padding
-$padding-xxlg: 80px;
-$padding-xl: 64px;
-$padding-lg: 56px;
-$padding-medlg: 48px;
-$padding-med: 40px;
-$padding-smlmed: 32px;
-$padding-sml: 24px;
-$padding-xsml: 16px;
-$padding-xxsml: 8px;
-$padding-xxxsml: 4;
-
-// Margins
-$margin-sml: 16px;
-$margin-lrg: 24px;
-
-// Photo Gallary Heights
-$tablet-image-height: 15vh;
-$tablet-image-width: 25vh;
-$desktop-image-height: 20vh;
-$desktop-image-width: 35vh;
-
-// Mixins
-@mixin mobile-imagesize {
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 90%;
-  height: 30vh;
-  margin: $margin-sml 0px $margin-sml 0;
-}
-
-@mixin tablet-imagesize {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: $tablet-image-height;
-  width: $tablet-image-width;
-  margin: $margin-sml 32px $margin-sml 0;
-}
-
-@mixin desktop-imagsize {
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: $desktop-image-height;
-  width: $desktop-image-width;
-  margin: $margin-sml 32px $margin-sml 0;
-}
+@use "partials/variables" as *;
+@use "partials/mixin" as *;
 
 @media (min-width: 320px) {
   .section1 {
@@ -141,14 +56,14 @@ $desktop-image-width: 35vh;
     height: auto;
     margin-bottom: 24px;
     &__image {
-      background-image: url(../assets/Images/hero-bio.jpg);
-      background-size: cover;
-      width: 100%;
-      height: 300px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      margin-bottom: 12px;
+      // background-image: url(../assets/Images/hero-bio.jpg);
+      // background-size: cover;
+      // width: 100%;
+      // height: 300px;
+      // display: flex;
+      // flex-direction: column;
+      // justify-content: center;
+      // margin-bottom: 12px;
       &--bandname {
         color: $bandsite-white;
         padding-left: 16px;
@@ -167,21 +82,13 @@ $desktop-image-width: 35vh;
   .imageandabout {
     // border-style: solid;
     width: 100%;
-    height: 50%;
+    height: 75%;
     margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: $margin-sml;
-    &__image {
-      background-image: url(../assets/Images/band.jpg);
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      width: 90vw;
-      height: 25vh;
-      margin-bottom: $margin-sml;
-    }
+
     &__summary {
       font-size: $fontsize-xtasml;
       margin-bottom: $margin-sml;
@@ -220,42 +127,62 @@ $desktop-image-width: 35vh;
       align-items: center;
       flex-direction: column;
     }
-    &__image1 {
-      background-image: url(../assets/Images/Photo-gallery-1.jpg);
-      @include mobile-imagesize;
+    &__image {
+      padding: 1rem;
     }
-    &__image2 {
-      background-image: url(../assets/Images/Photo-gallery-2.jpg);
-      @include mobile-imagesize;
+  }
+
+  .comments {
+    display: flex;
+    border-bottom: solid 1px $bandsite-silver;
+    &__form {
+      display: flex;
+      flex-direction: column;
     }
-    &__image3 {
-      background-image: url(../assets/Images/Photo-gallery-3.jpg);
-      @include mobile-imagesize;
+    &__selfie {
+      position: relative;
+      top: 35px;
+      border-radius: 50%;
+      width: 2rem;
+      height: 2rem;
     }
-    &__image4 {
-      background-image: url(../assets/Images/Photo-gallery-4.jpg);
-      @include mobile-imagesize;
+  }
+
+  .comment-display {
+    padding-left: 0.5rem;
+    &--orientation {
+      display: flex;
+      justify-content: space-between;
     }
-    &__image5 {
-      background-image: url(../assets/Images/Photo-gallery-5.jpg);
-      @include mobile-imagesize;
+    &--name {
+      padding: 0.5rem;
+      font-weight: bold;
     }
-    &__image6 {
-      background-image: url(../assets/Images/Photo-gallery-6.jpg);
-      @include mobile-imagesize;
+    &--date {
+      padding: 0.5rem;
+      color: $bandsite-silver;
     }
-    &__image7 {
-      background-image: url(../assets/Images/Photo-gallery-7.jpg);
-      @include mobile-imagesize;
+    &--comment {
+      padding: 0.5rem;
+      border-bottom: solid $bandsite-silver 1px;
     }
-    &__image8 {
-      background-image: url(../assets/Images/Photo-gallery-8.jpg);
-      @include mobile-imagesize;
+  }
+
+  .commentform__contents {
+    padding-left: 20px;
+    color: $bandsite-silver;
+    padding: 1rem;
+
+    &--alignment {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
     }
-    &__image9 {
-      background-image: url(../assets/Images/Photo-gallery-9.jpg);
-      @include mobile-imagesize;
-    }
+  }
+
+  input {
+    width: 80vw;
+    height: 2rem;
   }
 
   .footer {
@@ -303,6 +230,13 @@ $desktop-image-width: 35vh;
       }
     }
   }
+}
+
+button {
+  width: 80vw;
+  background-color: $bandsite-dark_black;
+  margin: 1rem 0 1rem 0;
+  color: $bandsite-white;
 }
 
 // This above is the terminator for tablet
@@ -594,7 +528,7 @@ $desktop-image-width: 35vh;
       padding: $padding-xsml 0 $padding-xsml 0;
     }
     &__image1 {
-      background-image: url(../assets/Images/Photo-gallery-1.jpg);
+      // background-image: url(../assets/Images/Photo-gallery-1.jpg);
       @include desktop-imagsize;
     }
     &__image2 {

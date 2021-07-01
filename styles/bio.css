@@ -49,16 +49,6 @@
     height: auto;
     margin-bottom: 24px;
   }
-  .hero__image {
-    background-image: url(../assets/Images/hero-bio.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 12px;
-  }
   .hero__image--bandname {
     color: #ffffff;
     padding-left: 16px;
@@ -74,21 +64,12 @@
 
   .imageandabout {
     width: 100%;
-    height: 50%;
+    height: 75%;
     margin-top: 16px;
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-right: 16px;
-  }
-  .imageandabout__image {
-    background-image: url(../assets/Images/band.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 90vw;
-    height: 25vh;
-    margin-bottom: 16px;
   }
   .imageandabout__summary {
     font-size: 0.875rem;
@@ -127,77 +108,60 @@
     align-items: center;
     flex-direction: column;
   }
-  .photogall__image1 {
-    background-image: url(../assets/Images/Photo-gallery-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .photogall__image {
+    padding: 1rem;
   }
-  .photogall__image2 {
-    background-image: url(../assets/Images/Photo-gallery-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+
+  .comments {
+    display: flex;
+    border-bottom: solid 1px #afafaf;
   }
-  .photogall__image3 {
-    background-image: url(../assets/Images/Photo-gallery-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .comments__form {
+    display: flex;
+    flex-direction: column;
   }
-  .photogall__image4 {
-    background-image: url(../assets/Images/Photo-gallery-4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .comments__selfie {
+    position: relative;
+    top: 35px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
   }
-  .photogall__image5 {
-    background-image: url(../assets/Images/Photo-gallery-5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+
+  .comment-display {
+    padding-left: 0.5rem;
   }
-  .photogall__image6 {
-    background-image: url(../assets/Images/Photo-gallery-6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .comment-display--orientation {
+    display: flex;
+    justify-content: space-between;
   }
-  .photogall__image7 {
-    background-image: url(../assets/Images/Photo-gallery-7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .comment-display--name {
+    padding: 0.5rem;
+    font-weight: bold;
   }
-  .photogall__image8 {
-    background-image: url(../assets/Images/Photo-gallery-8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .comment-display--date {
+    padding: 0.5rem;
+    color: #afafaf;
   }
-  .photogall__image9 {
-    background-image: url(../assets/Images/Photo-gallery-9.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 90%;
-    height: 30vh;
-    margin: 16px 0px 16px 0;
+  .comment-display--comment {
+    padding: 0.5rem;
+    border-bottom: solid #afafaf 1px;
+  }
+
+  .commentform__contents {
+    padding-left: 20px;
+    color: #afafaf;
+    padding: 1rem;
+  }
+  .commentform__contents--alignment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  input {
+    width: 80vw;
+    height: 2rem;
   }
 
   .footer {
@@ -246,6 +210,13 @@
     list-style: none;
   }
 }
+button {
+  width: 80vw;
+  background-color: #323232;
+  margin: 1rem 0 1rem 0;
+  color: #ffffff;
+}
+
 @media (min-width: 768px) {
   .section1 {
     width: 100vw;
@@ -559,12 +530,12 @@
     padding: 16px 0 16px 0;
   }
   .photogall__image1 {
-    background-image: url(../assets/Images/Photo-gallery-1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image2 {
     background-image: url(../assets/Images/Photo-gallery-2.jpg);
@@ -573,6 +544,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image3 {
     background-image: url(../assets/Images/Photo-gallery-3.jpg);
@@ -581,6 +553,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image4 {
     background-image: url(../assets/Images/Photo-gallery-4.jpg);
@@ -589,6 +562,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image5 {
     background-image: url(../assets/Images/Photo-gallery-5.jpg);
@@ -597,6 +571,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image6 {
     background-image: url(../assets/Images/Photo-gallery-6.jpg);
@@ -605,6 +580,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image7 {
     background-image: url(../assets/Images/Photo-gallery-7.jpg);
@@ -613,6 +589,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image8 {
     background-image: url(../assets/Images/Photo-gallery-8.jpg);
@@ -621,6 +598,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
   .photogall__image9 {
     background-image: url(../assets/Images/Photo-gallery-9.jpg);
@@ -629,6 +607,7 @@
     height: 20vh;
     width: 35vh;
     margin: 16px 32px 16px 0;
+    background-color: red;
   }
 
   .hero {
