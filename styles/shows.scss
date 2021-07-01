@@ -110,10 +110,12 @@ $desktop-image-width: 35vh;
     }
     &__item {
       color: $bandsite-white;
-      padding: 1rem;
+      // padding: 1rem;
       font-size: $fontsize-sml;
       // border: 3px solid white;
       font-size: $fontsize-sml;
+      margin: 0;
+      padding-top: 0.9rem;
     }
     &__links {
       display: flex;
@@ -128,10 +130,11 @@ $desktop-image-width: 35vh;
     }
     &__item--border {
       color: $bandsite-white;
-      padding: 1rem;
       font-size: $fontsize-sml;
       border-bottom: 3px solid white;
       font-size: $fontsize-sml;
+      padding: 1rem;
+      margin: 0;
     }
   }
   // padding-left: 20%;
@@ -144,7 +147,7 @@ $desktop-image-width: 35vh;
       background-image: url(../assets/Images/hero-shows.jpg);
       background-size: cover;
       width: 100%;
-      height: 300px;
+      height: 350px;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -152,16 +155,48 @@ $desktop-image-width: 35vh;
       color: $bandsite-white;
     }
     &__albuminfo {
+      display: flex;
+      flex-direction: column;
       padding: 0;
+      margin-left: 1rem;
+      list-style: none;
+      &--alignment {
+        padding: 0;
+        list-style: none;
+      }
     }
     &--bandname {
       color: $bandsite-white;
     }
     &__item {
-      padding: $padding-sml;
+      padding: $padding-xxxsml;
     }
   }
 
+  #container {
+    font-weight: $fontweight-reg;
+    padding: 1rem;
+  }
+
+  h3 {
+    padding: 0.5rem;
+    margin: 0;
+  }
+
+  .shows {
+    padding: 0;
+    &__title {
+      color: $bandsite-silver;
+      font-size: 0.8rem;
+    }
+  }
+
+  button {
+    background-color: $bandsite-dark_black;
+    color: $bandsite-white;
+    width: 90%;
+    border-radius: 10%;
+  }
   .allabout {
     padding: 0 0 0 0;
     &__title {
@@ -232,8 +267,10 @@ $desktop-image-width: 35vh;
     }
     &__list {
       list-style: none;
+      padding-left: 0px;
       &--copyright {
         list-style: none;
+        padding-left: 0px;
       }
     }
   }

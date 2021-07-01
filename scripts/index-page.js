@@ -29,7 +29,6 @@ let comment = [
 comment.forEach((element) => {
   let name = document.createElement("p");
   let namediv = document.createElement("div");
-  console.log(name, namediv);
   name.innerText = element.name;
   name.classList.add("comment-display--name");
   namediv.classList.add("comment-display--orientation");
@@ -37,13 +36,11 @@ comment.forEach((element) => {
   namediv.appendChild(name);
 
   let date = document.createElement("p");
-  console.log(date);
   date.innerText = element.date;
   date.classList.add("comment-display--date");
   namediv.appendChild(date);
 
   let comment = document.createElement("p");
-  console.log(comment);
   comment.innerText = element.comment;
   comment.classList.add("comment-display--comment");
   commentLocal.appendChild(comment);
@@ -53,4 +50,18 @@ const form = document.getElementById("comment__form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   console.log("form submitted");
+  // console.log(e.target.name.value);
+  // console.log(e.target.newcomment.value);
 });
+
+// This updates the comment array
+function displayComment(commentName, newComment) {
+  let updates = comment.unshift({
+    name: commentName,
+    date: "07/01/2021",
+    comment: newComment,
+  });
+  return updates;
+}
+
+displayComment("matt gainer", "New Comment");

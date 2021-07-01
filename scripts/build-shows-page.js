@@ -3,38 +3,56 @@ console.log(container);
 
 let concerts = [
   {
+    dateTitle: "DATES",
     date: "Monday Sept 06 2021",
+    venueTitle: "VENUE",
     venue: "Ronald Lane",
+    locationTitle: "LOCATION",
     location: "San Francisco, CA",
     button: "BUY TICKETS",
   },
   {
-    date: "Tuesday Sept 21 2021",
-    venue: "Pier 3 East",
+    dateTitle: "DATES",
+    date: "Monday Sept 06 2021",
+    venueTitle: "VENUE",
+    venue: "Ronald Lane",
+    locationTitle: "LOCATION",
     location: "San Francisco, CA",
     button: "BUY TICKETS",
   },
   {
-    date: "Fri Oct 15 2021",
-    venue: "View Lounge",
+    dateTitle: "DATES",
+    date: "Monday Sept 06 2021",
+    venueTitle: "VENUE",
+    venue: "Ronald Lane",
+    locationTitle: "LOCATION",
     location: "San Francisco, CA",
     button: "BUY TICKETS",
   },
   {
-    date: "Sat Nov 6 2021",
-    venue: "Hyatt Agency",
+    dateTitle: "DATES",
+    date: "Monday Sept 06 2021",
+    venueTitle: "VENUE",
+    venue: "Ronald Lane",
+    locationTitle: "LOCATION",
     location: "San Francisco, CA",
     button: "BUY TICKETS",
   },
   {
-    date: "Friday Nov 26 2021",
-    venue: "Moscow Center",
+    dateTitle: "DATES",
+    date: "Monday Sept 06 2021",
+    venueTitle: "VENUE",
+    venue: "Ronald Lane",
+    locationTitle: "LOCATION",
     location: "San Francisco, CA",
     button: "BUY TICKETS",
   },
   {
-    date: "Wed Dec 15 2021",
-    venue: "Press Club",
+    dateTitle: "DATES",
+    date: "Monday Sept 06 2021",
+    venueTitle: "VENUE",
+    venue: "Ronald Lane",
+    locationTitle: "LOCATION",
     location: "San Francisco, CA",
     button: "BUY TICKETS",
   },
@@ -44,12 +62,24 @@ console.log(concerts);
 // Create Element
 
 concerts.forEach((element) => {
+  let dateTitle = document.createElement("p");
+  dateTitle.classList.add("shows__title");
+  dateTitle.innerText = element.dateTitle;
+  container.appendChild(dateTitle);
   let date = document.createElement("p");
   date.innerText = element.date;
   container.appendChild(date);
+  let venueTitle = document.createElement("p");
+  venueTitle.classList.add("shows__title");
+  venueTitle.innerText = element.venueTitle;
+  container.appendChild(venueTitle);
   let venue = document.createElement("p");
   venue.innerText = element.venue;
   container.appendChild(venue);
+  let locationTitle = document.createElement("p");
+  locationTitle.classList.add("shows__title");
+  locationTitle.innerText = element.locationTitle;
+  container.appendChild(locationTitle);
   let location = document.createElement("p");
   location.innerText = element.location;
   container.appendChild(location);
