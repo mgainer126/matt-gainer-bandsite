@@ -1,5 +1,5 @@
 let commentLocal = document.querySelector("#comment");
-var today = new Date().toLocaleDateString(undefined, {
+let today = new Date().toLocaleDateString(undefined, {
   day: "2-digit",
   month: "2-digit",
   year: "numeric",
@@ -65,3 +65,16 @@ function displayComment(commentName, newComment) {
 }
 
 displayComment("matt gainer", "New Comment");
+
+function myFunction() {
+  let name = document.getElementById("comment__form").elements[0].value;
+  let comment = document.getElementById("comment__form").elements[1].value;
+  document.getElementById("newComment__name").innerText = name;
+  document.getElementById("newComment__date").innerText = today;
+  let newCommentDiv = document.createElement("div");
+  newCommentDiv.innerText = comment;
+  newCommentDiv.classList.add("newComment__comment");
+  let placeDiv = document.querySelector(".newcomments");
+  placeDiv.appendChild(newCommentDiv);
+  // document.getElementById("newComment__comment").innerText = comment;
+}

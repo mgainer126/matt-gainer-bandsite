@@ -148,6 +148,21 @@
     border-bottom: solid #afafaf 1px;
   }
 
+  #newComment__name {
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+
+  #newComment__date {
+    padding: 0.5rem;
+    color: #afafaf;
+  }
+
+  .newComment__comment {
+    padding: 0.5rem;
+    border-bottom: solid #afafaf 1px;
+  }
+
   .commentform__contents {
     padding-left: 20px;
     color: #afafaf;

@@ -168,6 +168,21 @@
     }
   }
 
+  #newComment__name {
+    padding: 0.5rem;
+    font-weight: bold;
+  }
+
+  #newComment__date {
+    padding: 0.5rem;
+    color: $bandsite-silver;
+  }
+
+  .newComment__comment {
+    padding: 0.5rem;
+    border-bottom: solid $bandsite-silver 1px;
+  }
+
   .commentform__contents {
     padding-left: 20px;
     color: $bandsite-silver;
