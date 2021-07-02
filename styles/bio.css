@@ -148,7 +148,7 @@
     border-bottom: solid #afafaf 1px;
   }
 
-  #newComment__name {
+  .newComment__name {
     padding: 0.5rem;
     font-weight: bold;
   }

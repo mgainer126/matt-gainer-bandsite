@@ -50,31 +50,38 @@ const form = document.getElementById("comment__form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   console.log("form submitted");
-  // console.log(e.target.name.value);
-  // console.log(e.target.newcomment.value);
 });
 
-// This updates the comment array
-function displayComment(commentName, newComment) {
-  let updates = comment.unshift({
-    name: commentName,
-    date: "07/01/2021",
-    comment: newComment,
-  });
-  return updates;
-}
+let sendBrowser = document.querySelector(".newcomment");
+let placment = document.querySelector(".comment-display--orientation");
 
-displayComment("matt gainer", "New Comment");
-
-function myFunction() {
+function displayComment() {
   let name = document.getElementById("comment__form").elements[0].value;
+  let newCommentName = document.createElement("p");
+  newCommentName.innerText = name;
+  newCommentName.classList.add("newComment__name");
+  placment.appendChild(newCommentName);
+  console.log(newCommentName);
+
+  let newDate = document.createElement("p");
+  newDate.innerText = today;
+  newDate.classList.add("newComment__date");
+  placment.appendChild(newDate);
+  console.log(newDate);
+
   let comment = document.getElementById("comment__form").elements[1].value;
-  document.getElementById("newComment__name").innerText = name;
-  document.getElementById("newComment__date").innerText = today;
-  let newCommentDiv = document.createElement("div");
-  newCommentDiv.innerText = comment;
-  newCommentDiv.classList.add("newComment__comment");
-  let placeDiv = document.querySelector(".newcomments");
-  placeDiv.appendChild(newCommentDiv);
-  // document.getElementById("newComment__comment").innerText = comment;
+  let newComment = document.createElement("p");
+  newComment.innerText = comment;
+  newComment.classList.add("newComment__comment");
+  sendBrowser.appendChild(newComment);
+  console.log(newComment);
+
+  let newArr = [
+    {
+      name: name,
+      date: today,
+      comment: comment,
+    },
+  ];
+  return newArr;
 }
