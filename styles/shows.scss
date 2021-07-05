@@ -123,6 +123,9 @@ $desktop-image-width: 35vh;
       // border-style: solid;
       // border-color: red;
       width: 320px;
+      &--styles {
+        text-decoration: none;
+      }
       &--logo {
         display: flex;
         align-items: center;
@@ -184,10 +187,13 @@ $desktop-image-width: 35vh;
   }
 
   .shows {
-    padding: 0;
+    // padding: 5rem;
     &__title {
       color: $bandsite-silver;
       font-size: 0.8rem;
+    }
+    &__info {
+      padding: 1rem;
     }
   }
 
@@ -322,127 +328,61 @@ $desktop-image-width: 35vh;
       background-image: url(../assets/Images/hero-shows.jpg);
       background-size: cover;
       width: 100%;
-      height: 300px;
+      height: 600px;
       display: flex;
       flex-direction: column;
       justify-content: center;
       margin-bottom: 12px;
       color: $bandsite-white;
+      &--bandname {
+        color: $bandsite-white;
+        margin: 0;
+      }
     }
     &__albuminfo {
       padding: 0;
-    }
-    &--bandname {
-      color: $bandsite-white;
+      &--alignment {
+        display: flex;
+        flex-direction: column;
+      }
     }
     &__item {
-      padding: $padding-sml;
+      padding: 1rem;
+      width: 25rem;
     }
   }
 
-  .allabout {
-    padding: 0 0 0 0;
+  iframe {
+    height: 15rem;
+    width: 30rem;
+  }
+
+  .shows {
+    display: flex;
+    justify-content: center;
+    &__info {
+      display: flex;
+      justify-content: space-between;
+      margin: 0 5rem 0 5rem;
+    }
     &__title {
-      padding: 12px;
-      padding-left: 15px;
-      display: flex;
-    }
-    &__shows {
-      padding: $padding-sml;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-bottom: solid $bandsite-silver 1px;
-      &--title {
-        color: $bandsite-silver;
-        padding: $padding-sml;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-      }
-    }
-    &__itemtitle {
-      padding: $padding-xxsml;
-      color: $bandsite-silver;
       display: none;
     }
-    &__item {
-      padding: $padding-xxsml;
-      font-size: 0.8rem;
-      font-weight: $fontweight-bold;
-      width: 20%;
-      &--placehold {
-        width: 15rem;
-      }
-    }
     &__button {
-      padding: $padding-xxsml;
-      width: 10rem;
+      width: 8rem;
       height: 2rem;
-      background-color: $bandsite-dark_black;
-      color: $bandsite-white;
-      border-radius: 10%;
-      text-align: center;
     }
   }
-  .imageandabout {
-    // border-style: solid;
-    width: 100%;
-    height: 1000px;
-    margin-top: 16px;
-    // display: flex;
-    // flex-direction: column;
-    // align-content: center;
-    // margin-right: $margin-sml;
-    &__image {
-      background-image: url(../assets/Images/band.jpg);
-      background-size: cover;
-      width: 75%;
-      height: 75%;
-      margin-bottom: $margin-sml;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    &__summary {
-      font-size: $fontsize-sml;
-      font-weight: $fontweight-demi;
-      margin-bottom: $margin-sml;
-      // border-style: solid;
-      width: 65vw;
-    }
-    &__quote {
-      font-size: $fontsize-xtasml;
-      font-style: $fontstyle-italic;
-      font-weight: $fontweight-demi;
-      // border-style: solid;
-      width: 72vw;
-      margin-bottom: $margin-sml;
-      margin-left: 5.5rem;
-    }
-    &__title {
-      margin-bottom: $margin-sml;
-      font-size: $fontsize-sml;
-      margin-top: $margin-sml;
-      padding-left: 70px;
-    }
-    &__writeup {
-      margin: 0 $margin-sml $margin-sml $margin-sml;
-      // border-style: solid;
-      line-height: 25px;
-      height: 300px;
-    }
-    &__paragraphs {
-      display: flex;
-      font-size: $fontsize-med;
-      padding: 0 50px $padding-sml 50px;
-    }
+
+  h3 {
+    margin-left: 4.5rem;
   }
+
   .footer {
     background-color: $bandsite-dark_black;
     color: $bandsite-white;
     padding: $padding-xsml;
-    height: 400px;
+    // height: 400px;
     &__copyright {
       font-size: $fontsize-xtasml;
       padding-top: $padding-xsml;
@@ -457,17 +397,14 @@ $desktop-image-width: 35vh;
     &__logo {
       display: visable;
       position: relative;
-      left: 69%;
       bottom: 77%;
     }
     &__logo1 {
-      display: visable;
+      display: none;
     }
   }
   .social {
     display: flex;
-    // border-style: solid;
-    // border-color: white;
     padding-top: 20px;
     margin-left: 45px;
     &__image {
@@ -510,41 +447,27 @@ $desktop-image-width: 35vh;
 // This above is the terminator for tablet
 
 @media (min-width: 1279px) {
-  .section1 {
-    width: 100vw;
+  h3 {
+    margin: 0;
+    font-size: $fontsize-med;
   }
+
   .header {
     background-color: $bandsite-dark_black;
     width: 100%;
     height: auto;
     display: flex;
-    // justify-content: flex-start;
-    &__items {
-      display: flex;
-      justify-content: flex-start;
-      margin-left: 10vw;
-    }
+
     &__logo2 {
       padding-right: 16px;
     }
-
     &__item {
       color: $bandsite-white;
       padding: 1rem;
       font-size: $fontsize-sml;
-      // padding-left: 20%;
-    }
-    &--title {
-      color: $bandsite-white;
-      font-size: $fontsize-lg;
-      padding-left: 25%;
-      padding-right: 25%;
     }
   }
   .hero {
-    width: 100vw;
-    height: auto;
-    margin-bottom: 24px;
     &__image {
       background-image: url(../assets/Images/hero-shows.jpg);
       background-size: cover;
@@ -553,25 +476,27 @@ $desktop-image-width: 35vh;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      &--bandname {
-        color: $bandsite-white;
-        padding-left: 30px;
-        font-size: $fontsize-lg;
-      }
     }
     &__item {
       font-weight: $fontweight-bold;
-      font-size: $fontsize-med;
-      padding-left: 10px;
+      font-size: $fontsize-sml;
+      width: 27rem;
+      padding-left: 1rem;
+      &--title {
+        padding-left: 13%;
+        font-size: $fontsize-sml;
+        width: 27rem;
+      }
     }
+
     &__albuminfo--alignment {
       display: flex;
+      flex-direction: row;
       justify-content: space-evenly;
       list-style: none;
     }
   }
   .allabout {
-    // border-style: solid;
     padding: $padding-xsml;
     margin: 0 $margin-lrg 0 $margin-lrg;
     &__title {
@@ -579,130 +504,78 @@ $desktop-image-width: 35vh;
       padding-left: $padding-lg;
     }
   }
-  .imageandabout {
-    // border-style: solid;
-    width: 100%;
-    height: 1000px;
-    margin-top: 16px;
-    // display: flex;
-    // flex-direction: column;
-    // align-content: center;
-    // margin-right: $margin-sml;
-    &__image {
-      background-image: url(../assets/Images/band.jpg);
-      background-size: cover;
-      width: 75%;
-      height: 75%;
-      margin-bottom: $margin-sml;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    &__summary {
-      font-size: $fontsize-sml;
-      font-weight: $fontweight-demi;
-      margin-bottom: $margin-sml;
-      // border-style: solid;
-      width: 70vw;
-    }
-    &__quote {
-      font-size: $fontsize-xtasml;
-      font-style: $fontstyle-italic;
-      font-weight: $fontweight-demi;
-      // border-style: solid;
-      width: 72vw;
-      margin-bottom: $margin-sml;
-      margin-left: 9rem;
-    }
-    &__title {
-      margin-bottom: $margin-sml;
-      font-size: $fontsize-sml;
-      margin-top: $margin-sml;
-      padding-left: 120px;
-    }
-    &__writeup {
-      margin: 0 $margin-sml $margin-sml $margin-sml;
-      // border-style: solid;
-      line-height: 25px;
-      height: 150px;
-    }
-    &__paragraphs {
-      display: flex;
-      font-size: $fontsize-med;
-      padding: 0 100px $padding-sml 100px;
+
+  .shows {
+    &__button {
+      width: 10rem;
+      height: 2.5rem;
+      margin: 1rem;
     }
   }
+
   .footer {
     background-color: $bandsite-dark_black;
     color: $bandsite-white;
     padding: $padding-xsml;
-    height: 500px;
+    height: 400px;
     &__copyright {
       font-size: $fontsize-xtasml;
       padding-top: $padding-xsml;
-      margin-left: $margin-sml;
+      margin-left: 2rem;
     }
     &__head {
       display: flex;
     }
     &__title {
       font-size: $fontsize-med;
-      margin-left: 8.2vw;
+      margin-left: 8vw;
     }
     &__logo {
       display: visable;
       position: relative;
-      left: 75%;
-      bottom: 60%;
+      left: 90%;
+      bottom: 75%;
     }
-    // &__logo1 {
-    //   display: visable;
-    // }
+  }
 
-    .social {
-      display: flex;
-      // border-style: solid;
-      // border-color: white;
-      padding-top: 20px;
-      margin-left: 45px;
-      &__image {
-        width: 20px;
-        height: 20px;
+  .social {
+    display: flex;
+    padding-top: 20px;
+    margin-left: 45px;
+    &__image {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .contact {
+    color: $bandsite-white;
+    padding: $padding-xsml 0 $padding-xsml 0;
+    display: flex;
+    justify-content: center;
+    &__list {
+      list-style: none;
+      &--copyright {
+        margin-left: 7vw;
+        list-style: none;
       }
     }
-    .contact {
-      color: $bandsite-white;
-      padding: $padding-xsml 0 $padding-xsml 0;
+    &__info {
+      font-size: $fontsize-xtasml;
       display: flex;
       justify-content: center;
-      &__list {
-        list-style: none;
-        &--copyright {
-          margin-left: 7vw;
-          list-style: none;
-        }
-      }
-      &__info {
-        font-size: $fontsize-xtasml;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-
-        // flex-direction: column;
-        padding: $padding-xsml;
-        // border-style: solid;
-        border-color: white;
-        width: 400px;
-        // height: 50px;
-      }
-      &__details {
-        padding-bottom: $padding-med;
-        font-size: $fontsize-xtasml;
-      }
-      &--name-job {
-        font-weight: $fontweight-bold;
-        padding-bottom: $padding-xsml;
-        font-size: $fontsize-sml;
-      }
+      align-items: center;
+      padding: $padding-xsml;
+      border-color: white;
+      width: 400px;
+    }
+    &__details {
+      padding-bottom: $padding-med;
+      font-size: $fontsize-xtasml;
+    }
+    &--name-job {
+      font-weight: $fontweight-bold;
+      padding-bottom: $padding-xsml;
+      font-size: $fontsize-sml;
     }
   }
 }

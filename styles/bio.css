@@ -32,6 +32,9 @@
     justify-content: space-evenly;
     width: 320px;
   }
+  .header__links--styles {
+    text-decoration: none;
+  }
   .header__links--logo {
     display: flex;
     align-items: center;
@@ -48,6 +51,16 @@
     width: 100vw;
     height: auto;
     margin-bottom: 24px;
+  }
+  .hero__image {
+    background-image: url(../assets/Images/hero-bio.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 12px;
   }
   .hero__image--bandname {
     color: #ffffff;
@@ -110,6 +123,7 @@
   }
   .photogall__image {
     padding: 1rem;
+    width: 90%;
   }
 
   .comments {
@@ -126,6 +140,13 @@
     border-radius: 50%;
     width: 2rem;
     height: 2rem;
+  }
+
+  button {
+    width: 16.1rem;
+    background-color: #323232;
+    margin: 1rem 0 1rem 0;
+    color: #ffffff;
   }
 
   .comment-display {
@@ -153,7 +174,7 @@
     font-weight: bold;
   }
 
-  #newComment__date {
+  .newComment__date {
     padding: 0.5rem;
     color: #afafaf;
   }
@@ -167,6 +188,7 @@
     padding-left: 20px;
     color: #afafaf;
     padding: 1rem;
+    font-size: 0.75rem;
   }
   .commentform__contents--alignment {
     display: flex;
@@ -225,14 +247,12 @@
     list-style: none;
   }
 }
-button {
-  width: 80vw;
-  background-color: #323232;
-  margin: 1rem 0 1rem 0;
-  color: #ffffff;
-}
-
 @media (min-width: 768px) {
+  h3 {
+    padding-left: 5rem;
+    font-size: 2rem;
+  }
+
   .section1 {
     width: 100vw;
   }
@@ -283,77 +303,86 @@ button {
     justify-content: center;
     padding: 24px 0 24px 0;
   }
-  .photogall__image1 {
-    background-image: url(../assets/Images/Photo-gallery-1.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .photogall__image {
+    padding: 1rem;
+    width: 25%;
   }
-  .photogall__image2 {
-    background-image: url(../assets/Images/Photo-gallery-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+
+  .comments {
+    display: flex;
+    border-bottom: solid 1px #afafaf;
+    margin: 0 5rem 0 5rem;
   }
-  .photogall__image3 {
-    background-image: url(../assets/Images/Photo-gallery-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .comments__form {
+    display: flex;
+    flex-direction: column;
   }
-  .photogall__image4 {
-    background-image: url(../assets/Images/Photo-gallery-4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .comments__selfie {
+    position: relative;
+    top: 35px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
   }
-  .photogall__image5 {
-    background-image: url(../assets/Images/Photo-gallery-5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+
+  .comment-display {
+    padding-left: 0.5rem;
   }
-  .photogall__image6 {
-    background-image: url(../assets/Images/Photo-gallery-6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .comment-display--orientation {
+    display: flex;
+    justify-content: space-between;
   }
-  .photogall__image7 {
-    background-image: url(../assets/Images/Photo-gallery-7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .comment-display--name {
+    padding-left: 6rem;
+    font-weight: bold;
   }
-  .photogall__image8 {
-    background-image: url(../assets/Images/Photo-gallery-8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .comment-display--date {
+    padding-right: 6rem;
+    color: #afafaf;
   }
-  .photogall__image9 {
-    background-image: url(../assets/Images/Photo-gallery-9.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 15vh;
-    width: 25vh;
-    margin: 16px 32px 16px 0;
+  .comment-display--comment {
+    margin: 0 6rem 0 6rem;
+    border-bottom: solid #afafaf 1px;
+  }
+
+  .newComment__name {
+    padding-left: 6rem;
+    font-weight: bold;
+  }
+
+  .newComment__date {
+    padding-right: 6rem;
+    color: #afafaf;
+  }
+
+  .newComment__comment {
+    padding: 0.5rem;
+    border-bottom: solid #afafaf 1px;
+  }
+
+  .commentform__contents {
+    padding-left: 20px;
+    color: #afafaf;
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+  .commentform__contents--alignment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  input {
+    width: 70vw;
+    height: 2rem;
+  }
+
+  button {
+    width: 8rem;
+    background-color: #323232;
+    margin: 1rem 0 1rem 75%;
+    color: #ffffff;
+    border-radius: 10%;
   }
 
   .hero {
@@ -498,6 +527,10 @@ button {
   }
 }
 @media (min-width: 1279px) {
+  .header3 {
+    padding-left: 9rem;
+  }
+
   .section1 {
     width: 100vw;
   }
@@ -527,6 +560,9 @@ button {
     padding-left: 25%;
     padding-right: 25%;
   }
+  .header__links--styles {
+    text-decoration: none;
+  }
 
   .photogall {
     width: 100vw;
@@ -536,6 +572,7 @@ button {
   .photogall__title {
     font-size: 2.25rem;
     padding: 24px 0 24px 0;
+    margin-left: 8rem;
   }
   .photogall__images {
     display: flex;
@@ -544,85 +581,83 @@ button {
     flex-wrap: wrap;
     padding: 16px 0 16px 0;
   }
-  .photogall__image1 {
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+
+  .comments {
+    display: flex;
+    justify-content: center;
+    border-bottom: solid 1px #afafaf;
+    margin: 0 27rem 0 21rem;
   }
-  .photogall__image2 {
-    background-image: url(../assets/Images/Photo-gallery-2.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+  .comments__form {
+    display: flex;
+    flex-direction: column;
   }
-  .photogall__image3 {
-    background-image: url(../assets/Images/Photo-gallery-3.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+  .comments__selfie {
+    position: relative;
+    top: 35px;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
   }
-  .photogall__image4 {
-    background-image: url(../assets/Images/Photo-gallery-4.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+
+  .comment-display {
+    padding-left: 0.5rem;
   }
-  .photogall__image5 {
-    background-image: url(../assets/Images/Photo-gallery-5.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+  .comment-display--orientation {
+    display: flex;
+    justify-content: space-between;
   }
-  .photogall__image6 {
-    background-image: url(../assets/Images/Photo-gallery-6.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+  .comment-display--name {
+    padding-left: 21rem;
+    font-weight: bold;
   }
-  .photogall__image7 {
-    background-image: url(../assets/Images/Photo-gallery-7.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+  .comment-display--date {
+    padding-right: 27rem;
+    color: #afafaf;
   }
-  .photogall__image8 {
-    background-image: url(../assets/Images/Photo-gallery-8.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+  .comment-display--comment {
+    margin: 0 27rem 0 21rem;
+    border-bottom: solid #afafaf 1px;
   }
-  .photogall__image9 {
-    background-image: url(../assets/Images/Photo-gallery-9.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 20vh;
-    width: 35vh;
-    margin: 16px 32px 16px 0;
-    background-color: red;
+
+  .newComment__name {
+    padding-left: 21rem;
+    font-weight: bold;
+  }
+
+  .newComment__date {
+    padding-right: 27rem;
+    color: #afafaf;
+  }
+
+  .newComment__comment {
+    margin: 0 27rem 0 21rem;
+    border-bottom: solid #afafaf 1px;
+  }
+
+  .commentform__contents {
+    padding-left: 20px;
+    color: #afafaf;
+    padding: 1rem;
+    font-size: 0.75rem;
+  }
+  .commentform__contents--alignment {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  input {
+    width: 40vw;
+    height: 2rem;
+  }
+
+  button {
+    width: 8rem;
+    background-color: #323232;
+    margin: 1rem 0 1rem 75%;
+    color: #ffffff;
+    border-radius: 10%;
   }
 
   .hero {
@@ -723,29 +758,31 @@ button {
     left: 75%;
     bottom: 60%;
   }
-  .footer .social {
+
+  .social {
     display: flex;
     padding-top: 20px;
     margin-left: 45px;
   }
-  .footer .social__image {
+  .social__image {
     width: 20px;
     height: 20px;
   }
-  .footer .contact {
+
+  .contact {
     color: #ffffff;
     padding: 16px 0 16px 0;
     display: flex;
     justify-content: center;
   }
-  .footer .contact__list {
+  .contact__list {
     list-style: none;
   }
-  .footer .contact__list--copyright {
+  .contact__list--copyright {
     margin-left: 7vw;
     list-style: none;
   }
-  .footer .contact__info {
+  .contact__info {
     font-size: 0.875rem;
     display: flex;
     justify-content: center;
@@ -754,11 +791,11 @@ button {
     border-color: white;
     width: 400px;
   }
-  .footer .contact__details {
+  .contact__details {
     padding-bottom: 40px;
     font-size: 0.875rem;
   }
-  .footer .contact--name-job {
+  .contact--name-job {
     font-weight: 700;
     padding-bottom: 16px;
     font-size: 1.5rem;

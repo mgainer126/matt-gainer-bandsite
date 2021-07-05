@@ -49,7 +49,6 @@ comment.forEach((element) => {
 const form = document.getElementById("comment__form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
-  console.log("form submitted");
 });
 
 let sendBrowser = document.querySelector(".newcomment");
@@ -75,13 +74,4 @@ function displayComment() {
   newComment.classList.add("newComment__comment");
   sendBrowser.appendChild(newComment);
   console.log(newComment);
-
-  let newArr = [
-    {
-      name: name,
-      date: today,
-      comment: comment,
-    },
-  ];
-  return newArr;
 }
