@@ -91,7 +91,7 @@
   }
   .imageandabout__quote {
     font-size: 0.875rem;
-    font-style: italic;
+    font-style: avenir-next-demi;
     margin-bottom: 16px;
     margin-right: auto;
     margin-left: 1rem;
@@ -290,7 +290,7 @@
   .photogall {
     width: 100vw;
     background-color: #fafafa;
-    margin: 24px;
+    margin: 24px 0 24px 0;
   }
   .photogall__title {
     font-size: 2.25rem;
@@ -436,7 +436,7 @@
   }
   .imageandabout__quote {
     font-size: 0.875rem;
-    font-style: italic;
+    font-style: avenir-next-demi;
     font-weight: 600;
     width: 72vw;
     margin-bottom: 16px;
@@ -711,7 +711,7 @@
   }
   .imageandabout__quote {
     font-size: 0.875rem;
-    font-style: italic;
+    font-style: avenir-next-demi;
     font-weight: 600;
     width: 72vw;
     margin-bottom: 16px;

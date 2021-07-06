@@ -305,7 +305,7 @@
   .photogall {
     width: 100vw;
     background-color: #fafafa;
-    margin: $margin-lrg;
+    margin: $margin-lrg 0 $margin-lrg 0;
     &__title {
       font-size: $fontsize-med;
       padding: $padding-sml 0 $padding-sml 0;

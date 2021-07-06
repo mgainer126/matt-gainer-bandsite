@@ -1,3 +1,6 @@
+@use "global" as *;
+@use "partials/mixin" as *;
+
 // Font Sizes
 // 60px
 $fontsize-lg: 3.75rem;
@@ -28,8 +31,9 @@ $fontweight-demi: 600;
 $fontweight-reg: 400;
 
 // Font Style
-$fontstyle-reg: regluar;
-$fontstyle-italic: italic;
+$fontstyle-reg: avenir-next-regular;
+$fontstyle-italic: avenir-next-demi;
+$fontstyle-bold: avenir-next-bold;
 
 // Colors
 $bandsite-black: #000000;
