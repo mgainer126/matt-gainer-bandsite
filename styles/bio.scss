@@ -565,7 +565,6 @@
     width: 100%;
     height: auto;
     display: flex;
-    // justify-content: flex-start;
     &__items {
       display: flex;
       justify-content: flex-start;
@@ -574,12 +573,13 @@
     &__logo2 {
       padding-right: 16px;
     }
-
     &__item {
       color: $bandsite-white;
       padding: 1rem;
-      font-size: $fontsize-sml;
-      // padding-left: 20%;
+      font-size: 1rem;
+      &--border {
+        font-size: 1rem;
+      }
     }
     &--title {
       color: $bandsite-white;
@@ -590,6 +590,7 @@
     &__links {
       &--styles {
         text-decoration: none;
+        font-size: 1rem;
       }
     }
   }
@@ -676,6 +677,11 @@
     }
   }
 
+  #newcomment {
+    width: 40vw;
+    height: 5rem;
+  }
+
   input {
     width: 40vw;
     height: 2rem;
@@ -683,6 +689,7 @@
 
   button {
     width: 8rem;
+    height: 2rem;
     background-color: $bandsite-dark_black;
     margin: 1rem 0 1rem 75%;
     color: $bandsite-white;
@@ -703,7 +710,7 @@
       justify-content: center;
       &--bandname {
         color: $bandsite-white;
-        padding-left: 30px;
+        padding-left: 7rem;
         font-size: $fontsize-lg;
       }
     }
@@ -722,10 +729,6 @@
     width: 100%;
     height: 1000px;
     margin-top: 16px;
-    // display: flex;
-    // flex-direction: column;
-    // align-content: center;
-    // margin-right: $margin-sml;
     &__image {
       background-image: url(../assets/Images/band.jpg);
       background-size: cover;
@@ -739,8 +742,8 @@
       font-size: $fontsize-sml;
       font-weight: $fontweight-demi;
       margin-bottom: $margin-sml;
-      // border-style: solid;
-      width: 70vw;
+      width: 715px;
+      margin-right: 200px;
     }
     &__quote {
       font-size: $fontsize-xtasml;
