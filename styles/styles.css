@@ -18,7 +18,7 @@
 .header__item {
   color: #ffffff;
   padding: 1rem;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .header__item--title {
   color: #ffffff;
@@ -181,4 +181,4 @@
 .contact__info--name-job {
   font-weight: 700;
   padding-bottom: 16px;
-}/*# sourceMappingURL=styles.css.map */
+} /*# sourceMappingURL=styles.css.map */

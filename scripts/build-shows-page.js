@@ -86,6 +86,7 @@ concerts.forEach((element) => {
   locationTitle.innerText = element.locationTitle;
   createDiv.appendChild(locationTitle);
   let location = document.createElement("p");
+  location.classList.add("shows__location");
   location.innerText = element.location;
   createDiv.appendChild(location);
   let button = document.createElement("button");

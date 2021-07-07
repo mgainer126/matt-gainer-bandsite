@@ -26,9 +26,7 @@
     &__item {
       color: $bandsite-white;
       padding: 1rem;
-      font-size: $fontsize-sml;
-      // border: 3px solid white;
-      font-size: $fontsize-sml;
+      font-size: 1rem;
     }
     &__links {
       display: flex;
@@ -47,9 +45,8 @@
     &__item--border {
       color: $bandsite-white;
       padding: 1rem;
-      font-size: $fontsize-sml;
+      font-size: 1rem;
       border-bottom: 3px solid white;
-      font-size: $fontsize-sml;
     }
   }
   // padding-left: 20%;
@@ -152,10 +149,17 @@
     }
   }
 
+  #newcomment {
+    height: 5rem;
+  }
+
   button {
     width: 16.1rem;
+    height: 2rem;
+    border-radius: 5px;
     background-color: $bandsite-dark_black;
-    margin: 1rem 0 1rem 0;
+    // margin-left: 1rem;
+    margin-top: 1rem;
     color: $bandsite-white;
   }
 
@@ -176,7 +180,15 @@
     &--comment {
       padding: 0.5rem;
       border-bottom: solid $bandsite-silver 1px;
+      margin-left: 2rem;
     }
+  }
+
+  .comment-circle {
+    height: 2rem;
+    width: 2rem;
+    background-color: $bandsite-silver;
+    border-radius: 50%;
   }
 
   .newComment__name {
@@ -288,8 +300,10 @@
     &__item {
       color: $bandsite-white;
       padding: 1rem;
-      font-size: $fontsize-sml;
-      // padding-left: 20%;
+      font-size: 1rem;
+      &--border {
+        font-size: 1rem;
+      }
     }
     &__links--logo {
       display: flex;
@@ -309,6 +323,7 @@
     &__title {
       font-size: $fontsize-med;
       padding: $padding-sml 0 $padding-sml 0;
+      margin-left: 60px;
     }
     &__images {
       display: flex;
@@ -340,6 +355,10 @@
     }
   }
 
+  #newcomment {
+    height: 5rem;
+  }
+
   .comment-display {
     padding-left: 0.5rem;
     &--orientation {
@@ -347,8 +366,8 @@
       justify-content: space-between;
     }
     &--name {
-      padding-left: 6rem;
       font-weight: bold;
+      margin-right: 22rem;
     }
     &--date {
       padding-right: 6rem;
@@ -373,6 +392,7 @@
   .newComment__comment {
     padding: 0.5rem;
     border-bottom: solid $bandsite-silver 1px;
+    margin: 0 95px 0 95px;
   }
 
   .commentform__contents {
@@ -386,6 +406,15 @@
       justify-content: center;
       align-items: flex-end;
     }
+  }
+
+  .comment-circle {
+    height: 2rem;
+    width: 2rem;
+    background-color: $bandsite-silver;
+    border-radius: 50%;
+    margin-left: 5rem;
+    margin-top: 1rem;
   }
 
   input {
@@ -441,7 +470,7 @@
     &__image {
       background-image: url(../assets/Images/band.jpg);
       background-size: cover;
-      width: 75%;
+      width: 90%;
       height: 75%;
       margin-bottom: $margin-sml;
       margin-left: auto;
@@ -452,7 +481,7 @@
       font-weight: $fontweight-demi;
       margin-bottom: $margin-sml;
       // border-style: solid;
-      width: 65vw;
+      width: 80vw;
     }
     &__quote {
       font-size: $fontsize-xtasml;
@@ -461,13 +490,13 @@
       // border-style: solid;
       width: 72vw;
       margin-bottom: $margin-sml;
-      margin-left: 5.5rem;
+      margin-left: 2rem;
     }
     &__title {
       margin-bottom: $margin-sml;
       font-size: $fontsize-sml;
       margin-top: $margin-sml;
-      padding-left: 70px;
+      padding-left: 40px;
     }
     &__writeup {
       margin: 0 $margin-sml $margin-sml $margin-sml;
@@ -478,7 +507,7 @@
     &__paragraphs {
       display: flex;
       font-size: $fontsize-med;
-      padding: 0 50px $padding-sml 50px;
+      padding: 0 20px $padding-sml 20px;
     }
   }
   .footer {
@@ -500,7 +529,7 @@
     &__logo {
       display: visable;
       position: relative;
-      left: 69%;
+      left: 80%;
       bottom: 77%;
     }
     &__logo1 {
@@ -636,22 +665,25 @@
       justify-content: space-between;
     }
     &--name {
-      padding-left: 21rem;
       font-weight: bold;
+      padding-top: 1.5rem;
     }
     &--date {
-      padding-right: 27rem;
+      padding-right: 20rem;
       color: $bandsite-silver;
+      position: relative;
+      right: 5rem;
     }
     &--comment {
-      margin: 0 27rem 0 21rem;
+      margin: 0 27rem 0 24rem;
       border-bottom: solid $bandsite-silver 1px;
     }
   }
 
   .newComment__name {
-    padding-left: 21rem;
     font-weight: bold;
+    padding-top: 1.5rem;
+    padding-left: 24rem;
   }
 
   .newComment__date {
@@ -660,7 +692,7 @@
   }
 
   .newComment__comment {
-    margin: 0 27rem 0 21rem;
+    margin: 0 27rem 0 25rem;
     border-bottom: solid $bandsite-silver 1px;
   }
 
@@ -675,6 +707,14 @@
       justify-content: center;
       align-items: flex-end;
     }
+  }
+
+  .comment-circle {
+    height: 2rem;
+    width: 2rem;
+    background-color: $bandsite-silver;
+    border-radius: 50%;
+    margin-left: 22rem;
   }
 
   #newcomment {
@@ -779,25 +819,22 @@
     height: 500px;
     &__copyright {
       font-size: $fontsize-xtasml;
-      padding-top: $padding-xsml;
-      margin-left: $margin-sml;
+      // padding-top: $padding-xsml;
+      // margin-left: $margin-sml;
     }
     &__head {
       display: flex;
     }
     &__title {
       font-size: $fontsize-med;
-      margin-left: 8.2vw;
+      margin-left: 100px;
     }
     &__logo {
       display: visable;
       position: relative;
-      left: 75%;
+      left: 87%;
       bottom: 60%;
     }
-    // &__logo1 {
-    //   display: visable;
-    // }
   }
   .social {
     display: flex;
@@ -815,6 +852,7 @@
     padding: $padding-xsml 0 $padding-xsml 0;
     display: flex;
     justify-content: center;
+    margin-right: 5rem;
     &__list {
       list-style: none;
       &--copyright {

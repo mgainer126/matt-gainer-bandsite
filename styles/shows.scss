@@ -28,7 +28,7 @@
       // padding: 1rem;
       font-size: $fontsize-sml;
       // border: 3px solid white;
-      font-size: $fontsize-sml;
+      font-size: 1rem;
       margin: 0;
       padding-top: 0.9rem;
     }
@@ -48,9 +48,8 @@
     }
     &__item--border {
       color: $bandsite-white;
-      font-size: $fontsize-sml;
+      font-size: 1rem;
       border-bottom: 3px solid white;
-      font-size: $fontsize-sml;
       padding: 1rem;
       margin: 0;
     }
@@ -106,9 +105,27 @@
     &__title {
       color: $bandsite-silver;
       font-size: 0.8rem;
-    }
-    &__info {
       padding: 1rem;
+    }
+    &__date {
+      padding: 1rem;
+      font-family: bold;
+    }
+    &__title {
+      padding: 1rem;
+    }
+    &__venue {
+      padding: 1rem;
+    }
+
+    &__info {
+      padding: 0;
+    }
+    &__location {
+      padding: 1rem;
+    }
+    &__button {
+      height: 3rem;
     }
   }
 
@@ -117,6 +134,7 @@
     color: $bandsite-white;
     width: 90%;
     border-radius: 10%;
+    margin: 1rem;
   }
   .allabout {
     padding: 0 0 0 0;
@@ -197,6 +215,15 @@
   }
 }
 
+iframe {
+  height: 10rem;
+  width: 17rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
 // This above is the terminator for tablet
 
 @media (min-width: 768px) {
@@ -252,6 +279,7 @@
       &--bandname {
         color: $bandsite-white;
         margin: 0;
+        font-size: $fontsize-lg;
       }
     }
     &__albuminfo {
@@ -263,7 +291,9 @@
     }
     &__item {
       padding: 1rem;
-      width: 25rem;
+      &--title {
+        font-size: 2rem;
+      }
     }
   }
 
@@ -313,7 +343,8 @@
     &__logo {
       display: visable;
       position: relative;
-      bottom: 77%;
+      bottom: 300px;
+      left: 600px;
     }
     &__logo1 {
       display: none;
@@ -364,7 +395,6 @@
 
 @media (min-width: 1279px) {
   h3 {
-    margin: 0;
     font-size: $fontsize-med;
   }
 
@@ -373,14 +403,16 @@
     width: 100%;
     height: auto;
     display: flex;
-
     &__logo2 {
       padding-right: 16px;
     }
     &__item {
       color: $bandsite-white;
       padding: 1rem;
-      font-size: $fontsize-sml;
+      font-size: 1rem;
+      &--border {
+        font-size: 1rem;
+      }
     }
   }
   .hero {
@@ -399,7 +431,7 @@
       width: 27rem;
       padding-left: 1rem;
       &--title {
-        padding-left: 13%;
+        padding-left: 10%;
         font-size: $fontsize-sml;
         width: 27rem;
       }
@@ -427,6 +459,9 @@
       height: 2.5rem;
       margin: 1rem;
     }
+    &__info {
+      margin: 0 5rem 0 15rem;
+    }
   }
 
   .footer {
@@ -437,19 +472,18 @@
     &__copyright {
       font-size: $fontsize-xtasml;
       padding-top: $padding-xsml;
-      margin-left: 2rem;
     }
     &__head {
       display: flex;
     }
     &__title {
       font-size: $fontsize-med;
-      margin-left: 8vw;
+      margin-left: 6.5vw;
     }
     &__logo {
       display: visable;
       position: relative;
-      left: 90%;
+      left: 85%;
       bottom: 75%;
     }
   }
@@ -468,6 +502,7 @@
     padding: $padding-xsml 0 $padding-xsml 0;
     display: flex;
     justify-content: center;
+    margin-right: 10rem;
     &__list {
       list-style: none;
       &--copyright {

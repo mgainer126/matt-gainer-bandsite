@@ -47,7 +47,7 @@
   .header__item {
     color: #ffffff;
     font-size: 1.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     margin: 0;
     padding-top: 0.9rem;
   }
@@ -65,9 +65,8 @@
   }
   .header__item--border {
     color: #ffffff;
-    font-size: 1.5rem;
+    font-size: 1rem;
     border-bottom: 3px solid white;
-    font-size: 1.5rem;
     padding: 1rem;
     margin: 0;
   }
@@ -119,9 +118,26 @@
   .shows__title {
     color: #afafaf;
     font-size: 0.8rem;
+    padding: 1rem;
+  }
+  .shows__date {
+    padding: 1rem;
+    font-family: bold;
+  }
+  .shows__title {
+    padding: 1rem;
+  }
+  .shows__venue {
+    padding: 1rem;
   }
   .shows__info {
+    padding: 0;
+  }
+  .shows__location {
     padding: 1rem;
+  }
+  .shows__button {
+    height: 3rem;
   }
 
   button {
@@ -129,6 +145,7 @@
     color: #ffffff;
     width: 90%;
     border-radius: 10%;
+    margin: 1rem;
   }
 
   .allabout {
@@ -209,6 +226,15 @@
     padding-left: 0px;
   }
 }
+iframe {
+  height: 10rem;
+  width: 17rem;
+}
+
+h3 {
+  font-size: 2.5rem;
+}
+
 @media (min-width: 768px) {
   .section1 {
     width: 100vw;
@@ -263,6 +289,7 @@
   .hero__image--bandname {
     color: #ffffff;
     margin: 0;
+    font-size: 3.75rem;
   }
   .hero__albuminfo {
     padding: 0;
@@ -273,7 +300,9 @@
   }
   .hero__item {
     padding: 1rem;
-    width: 25rem;
+  }
+  .hero__item--title {
+    font-size: 2rem;
   }
 
   iframe {
@@ -322,7 +351,8 @@
   .footer__logo {
     display: visable;
     position: relative;
-    bottom: 77%;
+    bottom: 300px;
+    left: 600px;
   }
   .footer__logo1 {
     display: none;
@@ -370,7 +400,6 @@
 }
 @media (min-width: 1279px) {
   h3 {
-    margin: 0;
     font-size: 2.25rem;
   }
 
@@ -386,7 +415,10 @@
   .header__item {
     color: #ffffff;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
+  }
+  .header__item--border {
+    font-size: 1rem;
   }
 
   .hero__image {
@@ -405,7 +437,7 @@
     padding-left: 1rem;
   }
   .hero__item--title {
-    padding-left: 13%;
+    padding-left: 10%;
     font-size: 1.5rem;
     width: 27rem;
   }
@@ -430,6 +462,9 @@
     height: 2.5rem;
     margin: 1rem;
   }
+  .shows__info {
+    margin: 0 5rem 0 15rem;
+  }
 
   .footer {
     background-color: #323232;
@@ -440,19 +475,18 @@
   .footer__copyright {
     font-size: 0.875rem;
     padding-top: 16px;
-    margin-left: 2rem;
   }
   .footer__head {
     display: flex;
   }
   .footer__title {
     font-size: 2.25rem;
-    margin-left: 8vw;
+    margin-left: 6.5vw;
   }
   .footer__logo {
     display: visable;
     position: relative;
-    left: 90%;
+    left: 85%;
     bottom: 75%;
   }
 
@@ -471,6 +505,7 @@
     padding: 16px 0 16px 0;
     display: flex;
     justify-content: center;
+    margin-right: 10rem;
   }
   .contact__list {
     list-style: none;
