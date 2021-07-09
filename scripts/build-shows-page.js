@@ -1,96 +1,73 @@
 let container = document.getElementById("shows");
-console.log(container);
 
-let concerts = [
-  {
-    dateTitle: "DATES",
-    date: "Mon Sept 06 2021",
-    venueTitle: "VENUE",
-    venue: "Ronald Lane",
-    locationTitle: "LOCATION",
-    location: "San Francisco, CA",
-    button: "BUY TICKETS",
-  },
-  {
-    dateTitle: "DATES",
-    date: "Tues Sept 21 2021",
-    venueTitle: "VENUE",
-    venue: "Pier 3 East",
-    locationTitle: "LOCATION",
-    location: "San Francisco, CA",
-    button: "BUY TICKETS",
-  },
-  {
-    dateTitle: "DATES",
-    date: "Fri Oct 15 2021",
-    venueTitle: "VENUE",
-    venue: "View Lounge",
-    locationTitle: "LOCATION",
-    location: "San Francisco, CA",
-    button: "BUY TICKETS",
-  },
-  {
-    dateTitle: "DATES",
-    date: "Sat Nov 06 2021",
-    venueTitle: "VENUE",
-    venue: "Hyatt Agency",
-    locationTitle: "LOCATION",
-    location: "San Francisco, CA",
-    button: "BUY TICKETS",
-  },
-  {
-    dateTitle: "DATES",
-    date: "Fri Nov 26 2021",
-    venueTitle: "VENUE",
-    venue: "Moscow Center",
-    locationTitle: "LOCATION",
-    location: "San Francisco, CA",
-    button: "BUY TICKETS",
-  },
-  {
-    dateTitle: "DATES",
-    date: "Wed Oct 15 2021",
-    venueTitle: "VENUE",
-    venue: "Press Club",
-    locationTitle: "LOCATION",
-    location: "San Francisco, CA",
-    button: "BUY TICKETS",
-  },
-];
+let key = "676f372d-598c-40fe-b139-0c0b8bab9f4";
 
-console.log(concerts);
-// Create Element
+axios
+  .get(
+    `https://project-1-api.herokuapp.com/showdates/?api_key="676f372d-598c-40fe-b139-0c0b8bab9f4"`
+  )
+  .then((response) => {
+    let concerts = response.data;
+    displayShows(concerts);
+    timeConversion(concerts);
+  });
 
-concerts.forEach((element) => {
-  let dateTitle = document.createElement("p");
-  let createDiv = document.createElement("div");
-  createDiv.classList.add("shows__info");
-  dateTitle.classList.add("shows__title");
-  dateTitle.innerText = element.dateTitle;
-  container.appendChild(createDiv);
-  createDiv.appendChild(dateTitle);
-  let date = document.createElement("p");
-  date.innerText = element.date;
-  date.classList.add("shows__date");
-  createDiv.appendChild(date);
-  let venueTitle = document.createElement("p");
-  venueTitle.classList.add("shows__title");
-  venueTitle.innerText = element.venueTitle;
-  createDiv.appendChild(venueTitle);
-  let venue = document.createElement("p");
-  venue.innerText = element.venue;
-  venue.classList.add("shows__venue");
-  createDiv.appendChild(venue);
-  let locationTitle = document.createElement("p");
-  locationTitle.classList.add("shows__title");
-  locationTitle.innerText = element.locationTitle;
-  createDiv.appendChild(locationTitle);
-  let location = document.createElement("p");
-  location.classList.add("shows__location");
-  location.innerText = element.location;
-  createDiv.appendChild(location);
-  let button = document.createElement("button");
-  button.innerText = element.button;
-  button.classList.add("shows__button");
-  createDiv.appendChild(button);
-});
+let displayShows = function (concerts) {
+  concerts.forEach((element) => {
+    let dateTitle = document.createElement("p");
+    let createDiv = document.createElement("div");
+    createDiv.classList.add("shows__info");
+    dateTitle.classList.add("shows__title");
+    dateTitle.innerText = "DATE";
+    container.appendChild(createDiv);
+    createDiv.appendChild(dateTitle);
+    let date = document.createElement("p");
+    let timestamp = element.date;
+    date.innerText = timeConversion(timestamp);
+    date.classList.add("shows__date");
+    createDiv.appendChild(date);
+    let venueTitle = document.createElement("p");
+    venueTitle.classList.add("shows__title");
+    venueTitle.innerText = "VENUE";
+    createDiv.appendChild(venueTitle);
+    let venue = document.createElement("p");
+    venue.innerText = element.place;
+    venue.classList.add("shows__venue");
+    createDiv.appendChild(venue);
+    let locationTitle = document.createElement("p");
+    locationTitle.classList.add("shows__title");
+    locationTitle.innerText = "LOCATION";
+    createDiv.appendChild(locationTitle);
+    let location = document.createElement("p");
+    location.classList.add("shows__location");
+    location.innerText = element.location;
+    createDiv.appendChild(location);
+    let button = document.createElement("button");
+    button.innerText = "BUT TICKETS";
+    button.classList.add("shows__button");
+    createDiv.appendChild(button);
+  });
+};
+
+let timeConversion = function (timestamp) {
+  var months_arr = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let date = new Date(timestamp * 1000);
+  let year = "2021";
+  let month = months_arr[date.getMonth()];
+  let day = date.getDate();
+  let fulldate = month + " " + day + " " + year;
+  return fulldate;
+};

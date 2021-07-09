@@ -139,6 +139,14 @@
   .shows__button {
     height: 3rem;
   }
+  .shows__head {
+    display: none;
+    justify-content: space-between;
+    width: 25rem;
+    color: #afafaf;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+  }
 
   button {
     background-color: #323232;
@@ -326,6 +334,23 @@ h3 {
   .shows__button {
     width: 8rem;
     height: 2rem;
+  }
+  .shows__head {
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+    color: #afafaf;
+    align-items: center;
+    margin: 0 5rem 0 5rem;
+  }
+  .shows__head--date {
+    padding-left: 1rem;
+  }
+  .shows__head--venue {
+    padding-right: 3rem;
+  }
+  .shows__head--location {
+    padding-right: 3rem;
   }
 
   h3 {

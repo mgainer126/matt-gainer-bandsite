@@ -127,6 +127,14 @@
     &__button {
       height: 3rem;
     }
+    &__head {
+      display: none;
+      justify-content: space-between;
+      width: 25rem;
+      color: $bandsite-silver;
+      align-items: center;
+      margin: 0 5rem 0 5rem;
+    }
   }
 
   button {
@@ -317,6 +325,23 @@ h3 {
     &__button {
       width: 8rem;
       height: 2rem;
+    }
+    &__head {
+      display: flex;
+      justify-content: space-between;
+      width: 25rem;
+      color: $bandsite-silver;
+      align-items: center;
+      margin: 0 5rem 0 5rem;
+      &--date {
+        padding-left: 1rem;
+      }
+      &--venue {
+        padding-right: 3rem;
+      }
+      &--location {
+        padding-right: 3rem;
+      }
     }
   }
 
