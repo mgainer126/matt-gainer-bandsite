@@ -52,6 +52,7 @@
       border-bottom: 3px solid white;
       padding: 1rem;
       margin: 0;
+      
     }
   }
   // padding-left: 20%;
@@ -100,6 +101,15 @@
     margin: 0;
   }
 
+  #shows{
+    display: flex;
+    flex-direction: column;
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+
   .shows {
     // padding: 5rem;
     &__title {
@@ -108,24 +118,33 @@
       padding: 1rem;
     }
     &__date {
-      padding: 1rem;
+      padding: 0.5rem;
       font-family: bold;
+      font-family: $fontstyle-reg;
+      font-size: 1rem;
     }
     &__title {
-      padding: 1rem;
+      padding: 0.5rem;
+      font-weight: $fontweight-bold;
     }
     &__venue {
-      padding: 1rem;
+      padding: 0.5rem;
     }
 
     &__info {
       padding: 0;
     }
     &__location {
-      padding: 1rem;
+      padding: 0.5rem;
     }
     &__button {
       height: 3rem;
+      padding: 0.5rem;
+      background-color: $bandsite-dark_black;
+      color: $bandsite-white;
+      width: 288px;
+      border-radius: 15%;
+      margin: 0.5rem;
     }
     &__head {
       display: none;
@@ -137,13 +156,7 @@
     }
   }
 
-  button {
-    background-color: $bandsite-dark_black;
-    color: $bandsite-white;
-    width: 90%;
-    border-radius: 10%;
-    margin: 1rem;
-  }
+
   .allabout {
     padding: 0 0 0 0;
     &__title {
@@ -256,7 +269,8 @@ h3 {
     &__item {
       color: $bandsite-white;
       padding: 1rem;
-      font-size: $fontsize-sml;
+      font-size: 1rem;
+
       // padding-left: 20%;
     }
     &__links--logo {
@@ -328,20 +342,23 @@ h3 {
     }
     &__head {
       display: flex;
-      justify-content: space-between;
-      width: 25rem;
+      width: 600px;
       color: $bandsite-silver;
       align-items: center;
-      margin: 0 5rem 0 5rem;
-      &--date {
-        padding-left: 1rem;
-      }
-      &--venue {
-        padding-right: 3rem;
-      }
+      margin-left: auto;
+      margin-right: auto;
       &--location {
-        padding-right: 3rem;
+        padding-right: 7rem;
+        position: relative;
+        right: 1.5rem;
       }
+    }
+  }
+  .showswrapper{
+    display: flex;
+    justify-content: center;
+    &__contents{
+      width: 760px;
     }
   }
 
@@ -353,7 +370,12 @@ h3 {
     background-color: $bandsite-dark_black;
     color: $bandsite-white;
     padding: $padding-xsml;
-    // height: 400px;
+    display: flex;
+    justify-content: center;
+    &__contents{
+      width: 768px;
+    }
+
     &__copyright {
       font-size: $fontsize-xtasml;
       padding-top: $padding-xsml;
@@ -478,14 +500,33 @@ h3 {
     }
   }
 
+  #shows{
+    width: 1000px;
+    margin-left: 15.5rem;
+  }
   .shows {
     &__button {
       width: 10rem;
       height: 2.5rem;
       margin: 1rem;
     }
-    &__info {
-      margin: 0 5rem 0 15rem;
+    &__head{
+      display: flex;
+      // justify-content: space-around;
+      &--venue{
+      padding-left: 33px;
+      }
+      &--location{
+        position: relative;
+        left: 1rem;
+      }
+    }  
+}
+  .showswrapper{
+    display: flex;
+    justify-content: center;
+    &__contents{
+      width: 1280px;
     }
   }
 
@@ -503,13 +544,17 @@ h3 {
     }
     &__title {
       font-size: $fontsize-med;
-      margin-left: 6.5vw;
+      margin-left: 5rem;
+      margin-right: 8.5rem;
     }
     &__logo {
       display: visable;
       position: relative;
       left: 85%;
       bottom: 75%;
+    }
+    &__contents{
+      width: 1280px;
     }
   }
 

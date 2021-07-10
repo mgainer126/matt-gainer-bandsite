@@ -93,6 +93,8 @@
       font-size: $fontsize-xtasml;
       margin-bottom: $margin-sml;
       width: 90vw;
+      font-family: $fontstyle-reg;
+      font-weight: 700;
     }
     &__quote {
       font-size: $fontsize-xtasml;
@@ -100,6 +102,7 @@
       margin-bottom: $margin-sml;
       margin-right: auto;
       margin-left: 1rem;
+      font-weight: 700;
     }
     &__title {
       margin-top: 3rem;
@@ -175,6 +178,8 @@
     &--date {
       padding: 0.5rem;
       color: $bandsite-silver;
+      margin-left: auto;
+      margin-right: 10%;
     }
     &--comment {
       padding: 0.5rem;
@@ -221,6 +226,7 @@
   input {
     width: 80vw;
     height: 2rem;
+    margin-bottom: 1rem;
   }
 
   .footer {
@@ -362,7 +368,7 @@
 
   #comment {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     margin: auto;
     width: 600px;
@@ -440,7 +446,9 @@
   input {
     width: 32rem;
     height: 2rem;
+    margin-bottom: 1rem;
   }
+
 
   button {
     width: 8rem;
@@ -679,10 +687,9 @@
       margin-right: 15%;
     }
     &--date {
-      padding-right: 20rem;
       color: $bandsite-silver;
-      position: relative;
-      right: 5rem;
+      margin-left: auto;
+      margin-right: 30%;
     }
     &--comment {
       margin: 0 370px 0 300px;

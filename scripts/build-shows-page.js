@@ -43,7 +43,7 @@ let displayShows = function (concerts) {
     location.innerText = element.location;
     createDiv.appendChild(location);
     let button = document.createElement("button");
-    button.innerText = "BUT TICKETS";
+    button.innerText = "BUY TICKETS";
     button.classList.add("shows__button");
     createDiv.appendChild(button);
   });

@@ -1,9 +1,26 @@
 let commentLocal = document.querySelector("#comment");
-let today = new Date().toLocaleDateString(undefined, {
-  day: "2-digit",
-  month: "2-digit",
-  year: "numeric",
-});
+let timeConversion = function (timestamp) {
+  var months_arr = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  let date = new Date(timestamp * 1000);
+  let year = "2021";
+  let month = months_arr[date.getMonth()];
+  let day = date.getDate();
+  let fulldate = month + " " + day + " " + year;
+  return fulldate;
+};
 
 let key = "676f372d-598c-40fe-b139-0c0b8bab9f4";
 
@@ -31,6 +48,7 @@ form.addEventListener("submit", function (e) {
         .get(`https://project-1-api.herokuapp.com/comments/?api_key=${key}`)
         .then((response) => {
           let comments = response.data;
+          commentLocal.innerText = " ";
           console.log(comments);
           displayComments(comments);
         });
@@ -56,7 +74,8 @@ let displayComments = function (comments) {
     commentLocal.appendChild(namediv);
     namediv.appendChild(name);
     let date = document.createElement("p");
-    date.innerText = element.timestamp;
+    let unix= element.timestamp;
+    date.innerText = timeConversion(unix);
     date.classList.add("comment-display--date");
     namediv.appendChild(date);
     let comment = document.createElement("p");

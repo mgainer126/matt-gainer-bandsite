@@ -109,6 +109,8 @@
     font-size: 0.875rem;
     margin-bottom: 16px;
     width: 90vw;
+    font-family: avenir-next-regular;
+    font-weight: 700;
   }
   .imageandabout__quote {
     font-size: 0.875rem;
@@ -116,6 +118,7 @@
     margin-bottom: 16px;
     margin-right: auto;
     margin-left: 1rem;
+    font-weight: 700;
   }
   .imageandabout__title {
     margin-top: 3rem;
@@ -189,6 +192,8 @@
   .comment-display--date {
     padding: 0.5rem;
     color: #afafaf;
+    margin-left: auto;
+    margin-right: 10%;
   }
   .comment-display--comment {
     padding: 0.5rem;
@@ -233,6 +238,7 @@
   input {
     width: 80vw;
     height: 2rem;
+    margin-bottom: 1rem;
   }
 
   .footer {
@@ -371,7 +377,7 @@
 
   #comment {
     display: flex;
-    flex-direction: column-reverse;
+    flex-direction: column;
     align-items: center;
     margin: auto;
     width: 600px;
@@ -441,6 +447,7 @@
   input {
     width: 32rem;
     height: 2rem;
+    margin-bottom: 1rem;
   }
 
   button {
@@ -679,10 +686,9 @@
     margin-right: 15%;
   }
   .comment-display--date {
-    padding-right: 20rem;
     color: #afafaf;
-    position: relative;
-    right: 5rem;
+    margin-left: auto;
+    margin-right: 30%;
   }
   .comment-display--comment {
     margin: 0 370px 0 300px;
