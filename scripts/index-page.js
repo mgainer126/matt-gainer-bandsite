@@ -1,4 +1,6 @@
 let commentLocal = document.querySelector("#comment");
+
+// Logic to translate timestamp to regular date
 let timeConversion = function (timestamp) {
   var months_arr = [
     "Jan",
@@ -22,8 +24,10 @@ let timeConversion = function (timestamp) {
   return fulldate;
 };
 
+
 let key = "676f372d-598c-40fe-b139-0c0b8bab9f4";
 
+// API Call for Inital Display
 axios
   .get(`https://project-1-api.herokuapp.com/comments/?api_key=${key}`)
   .then((response) => {
@@ -31,12 +35,14 @@ axios
     displayComments(comments);
   });
 
+// Button Submit Event Listener
 const form = document.getElementById("comment__form");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
   let name = e.target.name.value;
   let comment = e.target.newcomment.value;
 
+// API Update With Info Grabbed from Form Submit
   axios
     .post(`https://project-1-api.herokuapp.com/comments/?api_key=${key}`, {
       name: name,
@@ -58,6 +64,7 @@ form.addEventListener("submit", function (e) {
     });
 });
 
+// DOM Manipulation Update To Display Comments
 let displayComments = function (comments) {
   comments.forEach((element) => {
     let name = document.createElement("p");

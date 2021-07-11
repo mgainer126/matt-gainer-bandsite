@@ -2,6 +2,7 @@ let container = document.getElementById("shows");
 
 let key = "676f372d-598c-40fe-b139-0c0b8bab9f4";
 
+// API Call to Display Shows Data
 axios
   .get(
     `https://project-1-api.herokuapp.com/showdates/?api_key="676f372d-598c-40fe-b139-0c0b8bab9f4"`
@@ -12,6 +13,7 @@ axios
     timeConversion(concerts);
   });
 
+// DOM Manipulation to Diplay Comments on Page
 let displayShows = function (concerts) {
   concerts.forEach((element) => {
     let dateTitle = document.createElement("p");
@@ -49,6 +51,7 @@ let displayShows = function (concerts) {
   });
 };
 
+// Logic to Convert Timestamp to Date
 let timeConversion = function (timestamp) {
   var months_arr = [
     "Jan",
