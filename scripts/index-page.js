@@ -28,7 +28,6 @@ axios
   .get(`https://project-1-api.herokuapp.com/comments/?api_key=${key}`)
   .then((response) => {
     let comments = response.data;
-    console.log(comments);
     displayComments(comments);
   });
 
@@ -49,13 +48,13 @@ form.addEventListener("submit", function (e) {
         .then((response) => {
           let comments = response.data;
           commentLocal.innerText = " ";
-          console.log(comments);
+          e.target.newcomment.value = "";
+          e.target.name.value = "";
           displayComments(comments);
         });
-      console.log(response.data);
     })
     .catch((error) => {
-      console.log(error);
+    console.warn(error);
     });
 });
 

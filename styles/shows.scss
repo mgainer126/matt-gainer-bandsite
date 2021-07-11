@@ -9,7 +9,7 @@
   .header {
     background-color: $bandsite-dark_black;
     width: 100%;
-    height: 82px;
+    height: 6rem;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -25,18 +25,14 @@
     }
     &__item {
       color: $bandsite-white;
-      // padding: 1rem;
       font-size: $fontsize-sml;
-      // border: 3px solid white;
       font-size: 1rem;
       margin: 0;
-      padding-top: 0.9rem;
+      padding-top: 2rem;
     }
     &__links {
       display: flex;
       justify-content: space-evenly;
-      // border-style: solid;
-      // border-color: red;
       width: 320px;
       &--styles {
         text-decoration: none;
@@ -50,12 +46,11 @@
       color: $bandsite-white;
       font-size: 1rem;
       border-bottom: 3px solid white;
-      padding: 1rem;
+      padding: 2rem;
       margin: 0;
       
     }
   }
-  // padding-left: 20%;
 
   .hero {
     width: 100vw;
@@ -111,7 +106,6 @@
   }
 
   .shows {
-    // padding: 5rem;
     &__title {
       color: $bandsite-silver;
       font-size: 0.8rem;
@@ -256,7 +250,6 @@ h3 {
     width: 100%;
     height: auto;
     display: flex;
-    // justify-content: flex-start;
     &__items {
       display: flex;
       justify-content: flex-start;
@@ -268,10 +261,8 @@ h3 {
 
     &__item {
       color: $bandsite-white;
-      padding: 1rem;
+      padding: 1.9rem;
       font-size: 1rem;
-
-      // padding-left: 20%;
     }
     &__links--logo {
       display: flex;
@@ -347,6 +338,9 @@ h3 {
       align-items: center;
       margin-left: auto;
       margin-right: auto;
+      &--date {
+        padding-left: 0.5rem;
+      }
       &--location {
         padding-right: 7rem;
         position: relative;
@@ -364,6 +358,7 @@ h3 {
 
   h3 {
     margin-left: 4.5rem;
+    padding-bottom: 2rem;
   }
 
   .footer {
@@ -420,9 +415,7 @@ h3 {
     &__info {
       font-size: $fontsize-xtasml;
       display: flex;
-      // flex-direction: column;
       padding: $padding-xsml;
-      // border-style: solid;
       border-color: white;
       width: 400px;
       height: 200px;
@@ -443,6 +436,8 @@ h3 {
 @media (min-width: 1279px) {
   h3 {
     font-size: $fontsize-med;
+    position: relative;
+    top: 3.5rem;
   }
 
   .header {
@@ -455,7 +450,7 @@ h3 {
     }
     &__item {
       color: $bandsite-white;
-      padding: 1rem;
+      padding: 2rem;
       font-size: 1rem;
       &--border {
         font-size: 1rem;
@@ -471,6 +466,7 @@ h3 {
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
     &__item {
       font-weight: $fontweight-bold;
@@ -478,10 +474,13 @@ h3 {
       width: 27rem;
       padding-left: 1rem;
       &--title {
-        padding-left: 10%;
+        padding-left: 11%;
         font-size: $fontsize-sml;
         width: 27rem;
       }
+    }
+    &__albuminfo{
+      width: 1280px;
     }
 
     &__albuminfo--alignment {
@@ -512,13 +511,12 @@ h3 {
     }
     &__head{
       display: flex;
-      // justify-content: space-around;
       &--venue{
-      padding-left: 33px;
+      padding-left: 80px;
       }
       &--location{
         position: relative;
-        left: 1rem;
+        left: 4.5rem;
       }
     }  
 }
