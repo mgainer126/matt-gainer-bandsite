@@ -11,6 +11,6 @@ Installation Using Terminal
 
 About The Project Built With
 
-1. Javascript
+1. Vanilla Javascript
 2. SASS
 3. Web API
