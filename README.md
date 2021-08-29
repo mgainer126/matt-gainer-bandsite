@@ -11,6 +11,6 @@ Installation Using Terminal
 
 About The Project Built With
 
-Javascript
-SASS
-Web API
+1. Javascript
+2. SASS
+3. Web API
